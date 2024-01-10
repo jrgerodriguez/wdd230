@@ -75,7 +75,8 @@ a {
         font-size: 2.5rem;
     }
 
-    p, a {
+    p,
+    a {
         font-size: 2rem;
     }
 }
