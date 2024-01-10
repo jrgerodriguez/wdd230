@@ -34,7 +34,7 @@ body {
 
 .main-content-container {
     margin: 0 auto;
-    max-width: 95rem;
+    max-width: 70%;
 }
 
 /*Utilities*/
@@ -159,15 +159,6 @@ a {
 
 .main-content--title {
     border-bottom: 1px solid gray;
-    height: 5rem;
-}
-
-@media (max-width: 530px) {
-
-    .main-content--title {
-        border-bottom: none;
-    }
-
 }
 
 .card {
