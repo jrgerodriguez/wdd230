@@ -1,6 +1,6 @@
 :root {
     --primary: #141B41;
-    --mainFont: "Nunito Sans";
+    --mainFont: 'Nunito Sans', sans-serif;
 }
 
 /*Global*/
