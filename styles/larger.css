@@ -25,7 +25,7 @@
     }
 
     .card {
-        
+
         width: 100%;
     }
 
@@ -35,7 +35,7 @@
 
     .card2 {
         grid-area: 2/2/3/3;
-        
+
     }
 
     .header {
@@ -45,5 +45,25 @@
     .header__image img {
         height: 20rem;
         width: 20rem;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 1.9rem;
     }
 }
