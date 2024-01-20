@@ -1,7 +1,7 @@
 :root {
     --primary: #141B41;
     --secondary: #2F323A;
-    --third: #DFF0D2;
+    --third: #ECECE9;
     --mainFont: 'Nunito Sans', sans-serif;
 }
 
@@ -111,10 +111,6 @@ section h3 {
     background-color: var(--secondary);
     color: white;
     padding: 1rem;
-}
-
-section p {
-    margin-top: 0;
 }
 
 /* Footer */
