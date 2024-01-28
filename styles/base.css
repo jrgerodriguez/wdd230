@@ -83,6 +83,54 @@ li {
 
 /*Navigation*/
 
+/* small view navigation */
+
+#menu {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.15rem;
+    border: 0;
+    background: none;
+    color: #fff;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation a {
+    display: none;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 768px) {
+    .navigation {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        color: white;
+        display: block;
+        padding: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        transform: scale(1.1);
+        transition: transform 0.4s ease;
+    }
+
+}
+
 .navigation {
     background-color: black;
     display: flex;
@@ -93,16 +141,19 @@ li {
 
 .navigation a {
     color: white;
-    display: block;
     padding: 1.5rem;
     font-weight: bold;
     text-decoration: none;
 }
 
-.navigation a:hover {
-    transform: scale(1.1);
-    transition: transform 0.4s ease;
+.open a {
+    display: block;
 }
+
+.active::before {
+	content: "✔ ";
+}
+
 
 /*Main*/
 
