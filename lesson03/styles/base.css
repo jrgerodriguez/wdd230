@@ -1,6 +1,6 @@
 :root {
-    --background1: #141B41;
-    --background2: #fff;
+    --background: #141B41;
+    --secondary: #fff;
     --text: #000;
     --mainFont: 'Nunito Sans', sans-serif;
 }
@@ -69,7 +69,7 @@ li {
 }
 
 .color1 {
-    background-color: var(--background1);
+    background-color: var(--background);
     color: white;
 }
 
@@ -79,7 +79,7 @@ li {
 }
 
 .color3 {
-    background-color: var(--background2);
+    background-color: var(--secondary);
     color: var(--text);
 }
 
@@ -87,4 +87,10 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: start;
+}
+
+.heading {
+    background-color: var(--background);
+    color: var(--secondary);
+    padding: 1rem;
 }
