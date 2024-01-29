@@ -85,8 +85,16 @@ li {
 
 #wireframes {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
+}
+
+@media (min-width: 550px) {
+    #wireframes {
+        flex-direction: row;
+        align-items: start;
+    }
 }
 
 .heading {
