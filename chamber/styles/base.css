@@ -1,0 +1,155 @@
+:root {
+    --background: #141B41;
+    --secondary: #fff;
+    --text: #000;
+    --mainFont: 'Nunito Sans', sans-serif;
+}
+
+* {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: var(--mainFont);
+    margin: 0;
+}
+
+/** Global **/
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 10rem auto;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+
+/** Header **/
+
+header {
+    background-color: black;
+}
+
+.header__logobar {
+    background-color: black;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+span {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+/** Navigation **/
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+
+.hero {
+    height: 50rem;
+    background-image: url(/chamber/images/sansalvador.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    font-size: 2rem;
+    border: 2px solid black;
+
+    padding: 1rem 7rem;
+    color: var(--text);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all .4s;
+}
+
+/** Main **/
+
+main {
+    text-align: center;
+}
+
+.main__info-section {
+    display: grid;
+    grid-template-columns: 66% 33%;
+}
+
+.main__spotlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info__container {
+    width: 90%;
+}
+
