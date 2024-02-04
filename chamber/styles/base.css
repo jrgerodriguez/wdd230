@@ -104,7 +104,7 @@ a {
 
 .hero {
     height: 50rem;
-    background-image: url(/chamber/images/sansalvador.jpeg);
+    background-image: url(../images/sansalvador.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
