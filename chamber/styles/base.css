@@ -117,7 +117,7 @@ a {
     transform: translate(-50%, -50%);
     border-radius: 2px;
     font-size: 2rem;
-    border: 2px solid black;
+    border: 1px solid black;
 
     padding: 1rem 7rem;
     color: var(--text);
