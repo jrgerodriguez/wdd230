@@ -100,20 +100,19 @@ header {
     background-color: black;
 }
 
-.header__logobar {
+.name {
     max-width: 30rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
-    .header__logobar {
-        max-width: 70rem;
+    .name {
+        max-width: 71rem;
         margin: 0 auto;
     }
-}
-
-.logo {
-    text-align: center;
-    font-size: 1.5rem;
 }
 
 span {
@@ -127,7 +126,7 @@ span {
 #menu {
     position: absolute;
     right: 4rem;
-    top: 7rem;
+    top: 6.5rem;
     border: 0;
     background: none;
     color: #fff;
