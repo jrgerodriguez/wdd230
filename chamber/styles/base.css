@@ -34,6 +34,13 @@ body {
     margin: 10rem auto;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 3rem;
+}
+
 /* Typography */
 
 h1,
@@ -44,20 +51,47 @@ h4 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 h4 {
-    font-size: 2.8rem;
+    font-size: 1.5rem;
 }
+
+@media (min-width: 768px) {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1.2;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    h3 {
+        font-size: 3.2rem;
+    }
+
+    h4 {
+        font-size: 2.8rem;
+    }
+}
+
 
 
 /** Header **/
@@ -67,15 +101,12 @@ header {
 }
 
 .header__logobar {
-    background-color: black;
     max-width: 45rem;
     margin: 0 auto;
 }
 
 .logo {
-    text-decoration: none;
     text-align: center;
-    color: white;
     font-size: 1.5rem;
 }
 
@@ -83,24 +114,71 @@ span {
     font-weight: 300;
 }
 
-a {
-    text-decoration: none;
+/** Navigation **/
+
+/* small view navigation */
+
+#menu {
+    position: absolute;
+    right: 1.5rem;
+    top: 5.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    font-size: 3rem;
 }
 
-/** Navigation **/
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
 
 .navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
 
-a {
-    color: white;
+.navigation a {
+    display: none;
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    color: gray;
     font-weight: bold;
-    padding: 3rem;
 }
 
+/* large view navigation ************************************/
+
+@media (min-width: 768px) {
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation a:hover {
+        color: gray;
+        font-weight: bold;
+    }
+}
+
+/** Hero **/
 
 .hero {
     height: 50rem;
@@ -139,17 +217,35 @@ main {
 }
 
 .main__info-section {
-    display: grid;
-    grid-template-columns: 66% 33%;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .main__info-section {
+        display: grid;
+        grid-template-columns: 66% 33%;
+    }
 }
 
 .main__spotlights {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .main__spotlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .info__container {
-    width: 90%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .info__container {
+        width: 90%;
+    }
 }
 
 /* Footer */
