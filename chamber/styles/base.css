@@ -259,7 +259,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .footer {
+    footer {
         text-align: left;
     }
 }
