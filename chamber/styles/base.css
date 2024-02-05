@@ -138,7 +138,7 @@ span {
 }
 
 #menu.open::before {
-    content: "X";
+    content: "x";
 }
 
 .navigation {
