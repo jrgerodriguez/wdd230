@@ -13,3 +13,51 @@ menuBtn.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	menuBtn.classList.toggle('open');
 });
+
+// Dark Mode Switch
+
+const switchInput = document.querySelector('#switch-input');
+const body = document.querySelector('body');
+const para = document.querySelector('p');
+const eventsButton = document.querySelector('.current-events__button');
+
+switchInput.addEventListener('change', () => {
+	if (switchInput.checked) {
+		body.style.backgroundColor = 'black';
+		body.style.color = 'white';
+		para.style.color = 'white';
+		eventsButton.style.backgroundColor = 'white';
+		eventsButton.style.color = 'black';
+
+		eventsButton.addEventListener('mouseenter', () => {
+			eventsButton.style.backgroundColor = 'black';
+			eventsButton.style.color = 'white';
+			eventsButton.style.borderColor = 'white';
+		});
+
+		eventsButton.addEventListener('mouseleave', () => {
+			eventsButton.style.backgroundColor = 'white';
+			eventsButton.style.color = 'black';
+			eventsButton.style.borderColor = 'black';
+		});
+
+	} else {
+		body.style.backgroundColor = 'white';
+		body.style.color = 'black';
+		para.style.color = 'black';
+		eventsButton.style.backgroundColor = 'black';
+		eventsButton.style.color = 'white';
+
+		eventsButton.addEventListener('mouseenter', () => {
+			eventsButton.style.backgroundColor = 'white';
+			eventsButton.style.color = 'black';
+			eventsButton.style.borderColor = 'black';
+		});
+
+		eventsButton.addEventListener('mouseleave', () => {
+			eventsButton.style.backgroundColor = 'black';
+			eventsButton.style.color = 'white';
+			eventsButton.style.borderColor = 'white';
+		});
+	}
+});

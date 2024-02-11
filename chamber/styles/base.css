@@ -234,7 +234,8 @@ main {
     font-size: 2rem;
 }
 
-.current-events__event-paragraph {
+.current-events__event-paragraph,
+.weather__paragraph {
     color: var(--text);
     padding: 0 3rem;
 }
@@ -247,12 +248,12 @@ main {
     cursor: pointer;
     border: 1px solid black;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .current-events__button:hover {
     background-color: white;
     color: var(--text);
-    border: 1px solid black;
     transition: background-color 0.3s;
 }
 
@@ -263,6 +264,10 @@ main {
 .info__container {
     width: 100%;
     padding-bottom: 1rem;
+}
+
+.weather__paragraph::before {
+    content: "🌤 ";
 }
 
 @media (min-width: 768px) {
@@ -276,11 +281,13 @@ main {
         text-align: left;
     }
 
-    .current-events__event-title::before {
+    .current-events__event-title::before,
+    .weather__paragraph::before {
         font-size: 2.5rem;
     }
 
-    .current-events__event-paragraph {
+    .current-events__event-paragraph,
+    .weather__paragraph {
         padding: 0;
         padding-right: 10rem;
         text-align: left;
@@ -315,4 +322,73 @@ footer {
     footer {
         text-align: left;
     }
+}
+
+/* Dark Mode Switch */
+
+.dark-mode__container {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    transform: translate(-50px, 25px);
+}
+
+.dark-mode__title {
+    color: var(--secondary);
+    margin: 0;
+}
+
+.switch {
+    transform: translate(25%, 0);
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+}
+
+.switch #switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 13%;
+    background-color: var(--text);
+    -webkit-transition: .4s;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+#switch-input:checked+.slider {
+    background-color: #6a6e73;
+}
+
+#switch-input:focus+.slider {
+    box-shadow: 0 0 1px var(--secondary);
+}
+
+#switch-input:checked+.slider:before {
+    background-color: var(--secondary);
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
