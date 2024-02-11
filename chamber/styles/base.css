@@ -196,7 +196,7 @@ span {
     background-position: center;
 }
 
-.button {
+.hero__button {
     position: relative;
     top: 50%;
     left: 50%;
@@ -212,7 +212,7 @@ span {
     cursor: pointer;
 }
 
-.button:hover {
+.hero__button:hover {
     color: black;
     background-color: rgba(255, 255, 255, 0.7);
     transition: all .4s;
