@@ -24,6 +24,7 @@ body {
     font-size: 1.5rem;
     font-family: var(--mainFont);
     margin: 0;
+    width: 100%;
 }
 
 /** Global **/
@@ -242,7 +243,7 @@ main {
     background-color: black;
     color: var(--secondary);
     border: none;
-    padding: 1rem;
+    padding: 1rem 5rem;
     cursor: pointer;
     border: 1px solid black;
     font-size: 1.2rem;
