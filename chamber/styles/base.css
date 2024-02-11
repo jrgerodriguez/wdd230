@@ -66,6 +66,10 @@ h4 {
     font-size: 1.5rem;
 }
 
+p {
+    font-size: 1.3rem;
+}
+
 @media (min-width: 768px) {
 
     h1,
@@ -84,6 +88,10 @@ h4 {
 
     h3 {
         font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 1.9rem;
     }
 }
 
@@ -220,29 +228,73 @@ main {
     grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
-    .main__info-section {
-        display: grid;
-        grid-template-columns: 66% 33%;
-    }
+.current-events__event-title::before {
+    content: "🔎 ";
+    font-size: 2rem;
+}
+
+.current-events__event-paragraph {
+    color: var(--text);
+    padding: 0 3rem;
+}
+
+.current-events__button {
+    background-color: black;
+    color: var(--secondary);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 1.2rem;
+}
+
+.current-events__button:hover {
+    background-color: white;
+    color: var(--text);
+    border: 1px solid black;
+    transition: background-color 0.3s;
 }
 
 .main__spotlights {
     grid-template-columns: 1fr;
 }
 
+.info__container {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
+
+    .main__info-section {
+        display: grid;
+        grid-template-columns: 66% 33%;
+    }
+
+    .current-events__event-title {
+        text-align: left;
+    }
+
+    .current-events__event-title::before {
+        font-size: 2.5rem;
+    }
+
+    .current-events__event-paragraph {
+        padding: 0;
+        padding-right: 10rem;
+        text-align: left;
+    }
+
+    .current-events__button {
+        font-size: 1.5rem;
+        float: left;
+    }
+
     .main__spotlights {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
-.info__container {
-    width: 100%;
-}
-
-@media (min-width: 768px) {
     .info__container {
         width: 90%;
     }
