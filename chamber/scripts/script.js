@@ -18,14 +18,16 @@ menuBtn.addEventListener('click', () => {
 
 const switchInput = document.querySelector('#switch-input');
 const body = document.querySelector('body');
-const para = document.querySelector('p');
+const paragraphs = document.querySelectorAll('p');
 const eventsButton = document.querySelector('.current-events__button');
 
 switchInput.addEventListener('change', () => {
 	if (switchInput.checked) {
 		body.style.backgroundColor = 'black';
 		body.style.color = 'white';
-		para.style.color = 'white';
+		paragraphs.forEach(para => {
+			para.style.color = 'white';
+		})
 		eventsButton.style.backgroundColor = 'white';
 		eventsButton.style.color = 'black';
 
