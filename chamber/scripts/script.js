@@ -18,14 +18,14 @@ menuBtn.addEventListener('click', () => {
 
 const switchInput = document.querySelector('#switch-input');
 const body = document.querySelector('body');
-const paragraphs = document.querySelectorAll('p');
+const paragraph = document.querySelectorAll('.paragraph');
 const eventsButton = document.querySelector('.current-events__button');
 
 switchInput.addEventListener('change', () => {
 	if (switchInput.checked) {
 		body.style.backgroundColor = 'black';
 		body.style.color = 'white';
-		paragraphs.forEach(para => {
+		paragraph.forEach(para => {
 			para.style.color = 'white';
 		})
 		eventsButton.style.backgroundColor = 'white';
@@ -46,11 +46,12 @@ switchInput.addEventListener('change', () => {
 	} else {
 		body.style.backgroundColor = 'white';
 		body.style.color = 'black';
-		paragraphs.forEach(para => {
+		paragraph.forEach(para => {
 			para.style.color = 'black';
 		})
 		eventsButton.style.backgroundColor = 'black';
 		eventsButton.style.color = 'white';
+
 
 		eventsButton.addEventListener('mouseenter', () => {
 			eventsButton.style.backgroundColor = 'white';
