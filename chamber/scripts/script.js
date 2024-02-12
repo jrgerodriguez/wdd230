@@ -46,7 +46,9 @@ switchInput.addEventListener('change', () => {
 	} else {
 		body.style.backgroundColor = 'white';
 		body.style.color = 'black';
-		para.style.color = 'black';
+		paragraphs.forEach(para => {
+			para.style.color = 'black';
+		})
 		eventsButton.style.backgroundColor = 'black';
 		eventsButton.style.color = 'white';
 
