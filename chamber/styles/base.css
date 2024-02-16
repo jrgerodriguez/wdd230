@@ -261,16 +261,18 @@ main {
 
 .main__spotlights {
     grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 .info__container {
     width: 100%;
     padding-bottom: 1rem;
+    margin: 0 auto;
 }
 
 .logo_img {
-    height: 150px;
-    width: 150px;
+    height: 175px;
+    width: 175px;
     max-width: 100%;
     border-radius: 50%;
 }
@@ -301,13 +303,16 @@ main {
         float: left;
     }
 
+    .info__container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 878px) {
+
     .main__spotlights {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .info__container {
-        width: 90%;
     }
 
     .logo_img {
