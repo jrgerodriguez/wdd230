@@ -237,8 +237,7 @@ main {
     font-size: 2rem;
 }
 
-.current-events__event-paragraph,
-.weather__paragraph {
+.current-events__event-paragraph {
     color: var(--text);
     padding: 0 3rem;
 }
@@ -269,10 +268,6 @@ main {
     padding-bottom: 1rem;
 }
 
-.weather__paragraph::before {
-    content: "🔰 ";
-}
-
 .logo_img {
     height: 150px;
     width: 150px;
@@ -291,8 +286,7 @@ main {
         text-align: left;
     }
 
-    .current-events__event-title::before,
-    .weather__paragraph::before {
+    .current-events__event-title::before {
         font-size: 2.5rem;
     }
 
@@ -300,11 +294,6 @@ main {
         padding: 0;
         padding-right: 10rem;
         text-align: left;
-    }
-
-
-    .weather__paragraph {
-        text-align: center;
     }
 
     .current-events__button {
