@@ -38,7 +38,7 @@ body {
 .container {
     max-width: 120rem;
     width: 90%;
-    margin: 10rem auto;
+    margin: 0 auto;
 }
 
 a {
@@ -266,13 +266,13 @@ main {
 
 .info__container {
     width: 100%;
-    padding-bottom: 1rem;
+    padding: 3rem 0;
     margin: 0 auto;
 }
 
 .logo_img {
-    height: 175px;
-    width: 175px;
+    height: 200px;
+    width: 200px;
     max-width: 100%;
     border-radius: 50%;
 }
@@ -308,16 +308,10 @@ main {
     }
 }
 
-@media (min-width: 878px) {
-
+@media (min-width: 820px) {
     .main__spotlights {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .logo_img {
-        height: 200px;
-        width: 200px;
     }
 }
 
