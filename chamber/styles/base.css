@@ -270,7 +270,14 @@ main {
 }
 
 .weather__paragraph::before {
-    content: "🌤 ";
+    content: "🔰 ";
+}
+
+.logo_img {
+    height: 150px;
+    width: 150px;
+    max-width: 100%;
+    border-radius: 50%;
 }
 
 @media (min-width: 768px) {
@@ -289,11 +296,15 @@ main {
         font-size: 2.5rem;
     }
 
-    .current-events__event-paragraph,
-    .weather__paragraph {
+    .current-events__event-paragraph {
         padding: 0;
         padding-right: 10rem;
         text-align: left;
+    }
+
+
+    .weather__paragraph {
+        text-align: center;
     }
 
     .current-events__button {
@@ -308,6 +319,11 @@ main {
 
     .info__container {
         width: 90%;
+    }
+
+    .logo_img {
+        height: 200px;
+        width: 200px;
     }
 }
 
