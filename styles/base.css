@@ -176,7 +176,7 @@ li {
     background-color: var(--primary);
     color: white;
     font-weight: bold;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     margin: 0;
     grid-row: 1/2;
 }
