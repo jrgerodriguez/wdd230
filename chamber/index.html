@@ -47,11 +47,22 @@
         </nav>
     </header>
 
-    <div class="hero">
-        <button class="hero__button" onclick="window.location.href=''">Register</button>
-    </div>
+
 
     <main>
+
+        <div class="hero container">
+            <picture>
+                <source srcset="images/small.webp" media="(max-width: 600px)">
+                <source srcset="images/medium.webp" media="(max-width: 1200px)">
+                <img src="images/large.webp" alt="People Working" width="1600" height="800">
+            </picture>
+
+            <div>
+                <button class="hero__button" onclick="window.location.href=''">Register</button>
+            </div>
+        </div>
+
         <div class="container main__info-section">
             <div class="info__container">
                 <h2>CURRENT EVENTS</h2>
@@ -67,10 +78,9 @@
             <div class="info__container">
                 <h2>WEATHER</h2>
                 <hr>
-                <p>33°C</p>
-                <p>Partly Cloudy</p>
-                <p>Humidity: 35%</p>
-                <p>Wind Chill: N/A</p>
+                <p>Temperature: <span id="temperature">65</span>°F</p>
+                <p>Wind Speed: <span id="windspeed">7</span>mph</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
             </div>
         </div> <!--main__info-section-->
 
@@ -88,7 +98,7 @@
                 </div>
 
                 <div class="info__container">
-                    <img src="images/bhlogo.png" alt="BHN Logo" class="logo_img">
+                    <img src="images/bhlogo.webp" alt="BHN Logo" class="logo_img">
                     <h3>Blackhawk Network</h3>
                     <p>blackhawk.esjobs@bhn.com</p>
                     <p>+503 2507 0500</p>
@@ -96,7 +106,7 @@
                 </div>
 
                 <div class="info__container">
-                    <img src="images/eurekalogo.jpg" alt="Eureka Logo" class="logo_img">
+                    <img src="images/eurekalogo.webp" alt="Eureka Logo" class="logo_img">
                     <h3>Eureka</h3>
                     <p>talentseekers@eureka.com</p>
                     <p>+1 832-210-0804</p>
@@ -113,6 +123,7 @@
     </footer>
 
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/windchill.js"></script>
 </body>
 
 </html>
