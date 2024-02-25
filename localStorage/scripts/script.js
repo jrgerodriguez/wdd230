@@ -27,13 +27,10 @@ function displayList(item) {
     deleteBtn.classList.add('delete');
     li.append(deleteBtn);
     list.append(li);
-    input.value = "";
-    input.focus();
 
     deleteBtn.addEventListener('click', () => {
         list.removeChild(li);
         deleteChapter(li.textContent);
-        input.value = "";
         input.focus();
     });
 }
