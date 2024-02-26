@@ -1,7 +1,7 @@
 // Current Year
 
 const currentYear = {
-    year: "numeric"
+	year: "numeric"
 };
 
 document.querySelector('#currentyear').innerHTML = new Date().toLocaleDateString("en-US", currentYear);
@@ -21,3 +21,18 @@ menuBtn.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	menuBtn.classList.toggle('open');
 });
+
+// Number of visits
+
+const visitsDisplay = document.querySelector(".visits");
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. Welcome!`;
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
