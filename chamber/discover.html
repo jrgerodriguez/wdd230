@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Salvador Chamber of Commerce</title>
+    <meta name="description"
+        content="Our purpose is to promote and support the local business community by providing networking opportunities, advocacy, and resources to enhance economic growth and development.">
+    <meta name="author" content="Jorge Menjivar">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="San Salvador Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jrgerodriguez.github.io/wdd230/chamber/index.html">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Plaza-libertad-san-salvador.png/696px-Plaza-libertad-san-salvador.png">
+</head>
+
+<body>
+    <header>
+
+        <div class="dark-mode__container">
+            <h4 class="dark-mode__title">Dark Mode</h4>
+            <label class="switch">
+                <input type="checkbox" id="switch-input">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="header__bar">
+            <div class="name">
+                <h1>San Salvador Chamber of Commerce</h1>
+            </div>
+        </div>
+
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="./index.html">HOME</a>
+            <a href="" class="active">DISCOVER</a>
+            <a href="">DIRECTORY</a>
+            <a href="">JOIN</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="grid-container">
+            <aside class="aside">
+                <article>
+                    <h2>📊 STATISTICAL DATA</h2>
+                    <hr>
+                    <p><span>Population: </span>209,633</p>
+                    <p><span>Area: </span>27.90 sq mi</p>
+                    <p><span>Elevation: </span>2,159 ft</p>
+                    <p><span>GPD Per Capita: </span>$13,200</p>
+                </article>
+
+                <article>
+                    <h2>📅 UPCOMING EVENTS</h2>
+                    <hr>
+                    <p><span>Holy Week: </span>March 25th</p>
+                    <p><span>Patron Saint Festivals: </span>August 1st</p>
+                </article>
+
+                <article>
+                    <h2>🎪 ATTRACTIONS</h2>
+                    <hr>
+                    <p>Catedral Metropolitana de San Salvador</p>
+                    <p>Monumento al Divino Salvador del Mundo</p>
+                    <p>Plaza Gerardo Barrios</p>
+                    <p>Palacio Nacional de El Salvador</p>
+                </article>
+            </aside>
+
+            <div class="photo-column">
+
+                <div class="title-container">
+                    <h2>📸 LOCAL PHOTO GALLERY</h2>
+                    <hr>
+                </div>
+
+                <div class="photo-container">
+                    <img src="images/discoverimg1.webp" alt="" class="photo-container-img">
+                    <p>Sunset at San Salvador International Airport</p>
+                </div>
+                <div class="photo-container">
+                    <img src="images/discoverimg2.webp" alt="" class="photo-container-img">
+                    <p>Carretera Litoral, La Libertad</p>
+                </div>
+                <div class="photo-container">
+                    <img src="images/discoverimg3.webp" alt="" class="photo-container-img">
+                    <p>Cerro Eramon, Chalatenango</p>
+                </div>
+                <div class="photo-container">
+                    <img src="images/discoverimg4.webp" alt="" class="photo-container-img">
+                    <p>Coatepeque Lake</p>
+                </div>
+                <div class="photo-container">
+                    <img src="images/discoverimg5.webp" alt="" class="photo-container-img">
+                    <p>El Encanto Waterfall</p>
+                </div>
+                <div class="photo-container">
+                    <img src="images/discoverimg6.webp" alt="" class="photo-container-img">
+                    <p>El Zonte Beach</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Jorge Menjivar Rodriguez - WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+    <!--<script src="./scripts/windchill.js"></script>-->
+</body>
+
+</html>

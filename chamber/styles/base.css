@@ -411,3 +411,46 @@ footer {
         transform: translate(50%, -50%);
     }
 }
+
+/* Discover */
+
+.aside {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 3rem 0;
+    gap: 5rem;
+}
+
+.photo-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-container,
+.title-container {
+    width: 90%;
+    height: auto;
+}
+
+.title-container {
+    margin-bottom: 2rem;
+}
+
+
+.photo-container-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+}
