@@ -428,7 +428,7 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 100%;
     padding: 3rem 0;
     gap: 5rem;
 }
@@ -457,8 +457,13 @@ footer {
     border-radius: 0.5rem;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
     .grid-container {
-        grid-template-columns: 100%;
+        grid-template-columns: 35% 65%;
+    }
+
+    .photo-container-img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
 }

@@ -66,3 +66,35 @@ switchInput.addEventListener('change', () => {
 		});
 	}
 });
+
+// Message based on number of visits
+
+const visitsMessageDisplay = document.getElementById('visits-message-display');
+const milsInOneDay = 24 * 60 * 60 * 1000;
+
+let lastVisitDate = localStorage.getItem('lastVisitDate');
+
+if (!lastVisitDate) {
+	visitsMessageDisplay.textContent = 'Welcome! Let us know if you have any questions.';
+} else {
+	let lastVisit = new Date(lastVisitDate);
+	let newVisitDate = new Date();
+	let timeDifference = newVisitDate.getTime() - lastVisit.getTime();
+
+	if (timeDifference < milsInOneDay) {
+		visitsMessageDisplay.textContent = 'Back so soon! Awesome!';
+	} else if (timeDifference > milsInOneDay) {
+		let numberOfDays = timeDifference / 1000 / 60 / 60 / 24;
+		visitsMessageDisplay.textContent = `You last visited ${numberOfDays} days ago.`;
+	}
+}
+
+localStorage.setItem('lastVisitDate', new Date().toISOString());
+
+
+
+// let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+// numVisits++;
+// localStorage.setItem("numVisits-ls", numVisits);
+
+// console.log(numVisits);
