@@ -418,6 +418,14 @@ footer {
     width: 100%;
 }
 
+.article {
+    display: block;
+}
+
+.article:not(:last-child) {
+    margin-bottom: 10rem;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 35% 65%;
