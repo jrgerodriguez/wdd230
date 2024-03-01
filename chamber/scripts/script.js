@@ -84,7 +84,7 @@ if (!lastVisitDate) {
 	if (timeDifference < milsInOneDay) {
 		visitsMessageDisplay.textContent = 'Back so soon! Awesome!';
 	} else if (timeDifference > milsInOneDay) {
-		let numberOfDays = timeDifference / 1000 / 60 / 60 / 24;
+		let numberOfDays = (timeDifference / (1000 * 60 * 60 * 24)).toFixed(0);
 		visitsMessageDisplay.textContent = `You last visited ${numberOfDays} days ago.`;
 	}
 }
