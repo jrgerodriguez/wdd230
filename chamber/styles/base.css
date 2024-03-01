@@ -165,8 +165,7 @@ span {
 }
 
 .active {
-    color: gray;
-    font-weight: bold;
+    color: #ABEBC6;
 }
 
 /* large view navigation ************************************/
@@ -186,7 +185,7 @@ span {
     }
 
     .navigation a:hover {
-        color: gray;
+        text-decoration: underline;
         font-weight: bold;
     }
 }
