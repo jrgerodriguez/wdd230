@@ -1,0 +1,106 @@
+:root {
+    --backgroundColor: #eee;
+    --border: 1px solid #ddd;
+    --borderBottomRequired: solid 8px red;
+    --borderBottomValid: solid 8px green;
+    --boldFontWeight: bold;
+    --legendFontSize: 2.5rem;
+    --labelFontSize: 1.7rem;
+    --primaryTextColor: #141B41;
+}
+
+.form {
+    margin: 0 auto;
+}
+
+.form fieldset {
+    margin: 2rem 0;
+    border: var(--border);
+    border-radius: 6px;
+    padding: 1.5rem 2%;
+    min-width: 100%;
+}
+
+.form legend {
+    font-weight: var(--boldFontWeight);
+    padding: 0 .5rem;
+    font-size: var(--legendFontSize)
+}
+
+.form label {
+    display: block;
+    padding-top: 2.5rem;
+    font-size: var(--labelFontSize);
+    color: var(--primaryColor);
+    font-weight: var(--boldFontWeight);
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+#confirm-password {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 1.3rem;
+    width: 100%;
+    max-width: 40rem;
+    appearance: none;
+    color: #3c3c3c;
+    font-size: var(--labelFontSize);
+}
+
+.form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#001510, #0f5950);
+    color: #fff;
+    border-radius: 6px;
+    padding: 1.3rem;
+    width: 100%;
+    max-width: 40rem;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-weight: var(--boldFontWeight);
+    font-size: var(--labelFontSize);
+    margin-top: .5rem;
+}
+
+#range {
+    width: 100%;
+    max-width: 40rem;
+    margin-bottom: 0;
+}
+
+#rangevalue {
+    font-size: 2rem;
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 400px;
+}
+
+.form input:required {
+    border-bottom: solid 8px red;
+}
+
+.form input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+main {
+    padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+
+}
+
