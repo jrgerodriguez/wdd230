@@ -100,7 +100,7 @@ main {
     }
 }
 
-@media (max-width: 550px) {
-
+.submitted-message {
+    padding: 3rem;
 }
 
