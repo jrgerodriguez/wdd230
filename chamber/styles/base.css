@@ -537,11 +537,13 @@ textarea {
     background-color: #eee;
 }
 
-.membership-content:hover {
-    background-color: #ddd;
+@media (min-width: 768px) {
+    .membership-content:hover {
+        background-color: #ddd;
+    }
 }
 
-.membership-container .membership-content label{
+.membership-container .membership-content label {
     cursor: pointer;
 }
 
