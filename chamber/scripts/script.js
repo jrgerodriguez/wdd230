@@ -20,11 +20,15 @@ const switchInput = document.querySelector('#switch-input');
 const body = document.querySelector('body');
 const paragraph = document.querySelectorAll('.paragraph');
 const eventsButton = document.querySelector('.current-events__button');
+const membershipContent = document.querySelectorAll('.membership-content');
 
 switchInput.addEventListener('change', () => {
 	if (switchInput.checked) {
 		body.style.backgroundColor = 'black';
 		body.style.color = 'white';
+		membershipContent.forEach(element => {
+			element.style.color = 'black';
+		})
 		paragraph.forEach(para => {
 			para.style.color = 'white';
 		})

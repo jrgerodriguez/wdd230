@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Salvador Chamber of Commerce</title>
+    <meta name="description"
+        content="Our purpose is to promote and support the local business community by providing networking opportunities, advocacy, and resources to enhance economic growth and development.">
+    <meta name="author" content="Jorge Menjivar">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="San Salvador Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jrgerodriguez.github.io/wdd230/chamber/index.html">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Plaza-libertad-san-salvador.png/696px-Plaza-libertad-san-salvador.png">
+</head>
+
+<body>
+    <header>
+
+        <div class="dark-mode__container">
+            <h4 class="dark-mode__title">Dark Mode</h4>
+            <label class="switch">
+                <input type="checkbox" id="switch-input">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="header__bar">
+            <div class="name">
+                <h1>San Salvador Chamber of Commerce</h1>
+            </div>
+        </div>
+
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">HOME</a>
+            <a href="./discover.html">DISCOVER</a>
+            <a href="">DIRECTORY</a>
+            <a href="" class="active">JOIN</a>
+        </nav>
+    </header>
+
+
+
+    <main class="container">
+        <form action="thankyou.html" method="get" class="chamber-form">
+            <fieldset>
+                <legend>MEMBERSHIP APPLICATION FORM</legend>
+                <label>First Name*<input type="text" name="fname" required id="first-name"></label>
+                <label>Last Name*<input type="text" name="lname" required id="last-name"></label>
+                <label>Title or Position:*<input type="text" name="title" required id="title" pattern="[A-Za-z\s\-]{7,}"
+                        title="Only characters, hyphens, and spaces with a minimum of seven characters"></label>
+                <label>Email*<input type="email" name="email" required id="email"
+                        placeholder="someome@email.com"></label>
+                <label>Phone*<input type="tel" name="phone" required id="phone"></label>
+                <label>Business/Organization's Name* <input type="text" name="business" required id="business"></label>
+                <div class="membership-container">
+                    <div>Membership Level</div>
+                    <div class="membership-box">
+                        <div class="membership-content">
+                            <label><input type="radio" name="membership" value="npmembership">NP Membership (Non-Profit
+                                Organizations)
+                                <ul>
+                                    <li>
+                                        Tailored for non-profit organizations
+                                    </li>
+                                    <li>
+                                        Access to networking events
+                                    </li>
+                                    <li>
+                                        Quarterly updates on industry trends
+                                    </li>
+                                    <li class="price">
+                                        FREE
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div class="membership-content">
+                            <label><input type="radio" name="membership" value="bronze">Bronze Membership
+                                <ul>
+                                    <li>
+                                        Access to exclusive networking events
+                                    </li>
+                                    <li>
+                                        Quarterly newsletters with industry updates
+                                    </li>
+                                    <li>
+                                        Discounts on workshops and basic advertising
+                                    </li>
+                                    <li class="price">
+                                        $5/mo
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div class="membership-content">
+                            <label><input type="radio" name="membership" value="silver">Silver Membership
+                                <ul>
+                                    <li>
+                                        All Bronze benefits
+                                    </li>
+                                    <li>
+                                        Priority registration and event discounts
+                                    </li>
+                                    <li>
+                                        Enhanced advertising and exclusive webinars
+                                    </li>
+                                    <li class="price">
+                                        $15/mo
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div class="membership-content">
+                            <label><input type="radio" name="membership" value="gold">Gold Membership
+                                <ul>
+                                    <li>
+                                        All Silver benefits
+                                    </li>
+                                    <li>
+                                        Free event entry and consultations
+                                    </li>
+                                    <li>
+                                        Premium advertising and VIP access
+                                    </li>
+                                    <li class="price">
+                                        $25/mo
+                                    </li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <label>Business/Organization's Description<textarea name="description" id="description" cols="30"
+                        rows="10"></textarea></label>
+                <input type="hidden" name="dateandtime">
+            </fieldset>
+            <input type="submit" value="Send My Information">
+        </form>
+    </main>
+
+
+    <footer>
+        <p>Jorge Menjivar Rodriguez - WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/windchill.js"></script>
+</body>
+
+</html>

@@ -466,3 +466,137 @@ footer {
         transition: transform 0.3s ease;
     }
 }
+
+/* ------------------------ FORM ------------------------ */
+
+.chamber-form {
+    text-align: initial;
+    margin: 5% auto;
+}
+
+@media (max-width: 550px) {
+    .chamber-form {
+        margin: 10% auto;
+    }
+}
+
+.chamber-form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 3rem;
+}
+
+.chamber-form legend {
+    padding: 0 .8rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.chamber-form label,
+.membership-container,
+textarea {
+    display: block;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.chamber-form input[type="text"],
+.chamber-form input[type="tel"],
+.chamber-form input[type="email"],
+textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.chamber-form input[type="radio"] {
+    margin-right: 1rem;
+}
+
+.membership-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+.membership-box {
+    padding-top: 2rem;
+}
+
+.membership-content {
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 0 3rem;
+    background-color: #eee;
+}
+
+.membership-content:hover {
+    background-color: #ddd;
+}
+
+.membership-container .membership-content label{
+    cursor: pointer;
+}
+
+.membership-content li {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    list-style: circle;
+    font-weight: normal;
+}
+
+.membership-content .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    list-style: none
+}
+
+.chamber-form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#001510, #0f5950);
+    color: #fff;
+    border-radius: 6px;
+    padding: 1.2rem;
+    width: 100%;
+    max-width: 40rem;
+    margin: -1rem 2% 2rem 2%;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.chamber-form input[type="submit"]:hover {
+    opacity: 0.93;
+}
+
+@media (max-width: 640px) {
+    .membership-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 487px) {
+    .chamber-form input[type="submit"] {
+        margin-left: initial;
+    }
+}
+
+.thankyou-message {
+    padding: 3rem;
+}
+
+.chamber-form input:required {
+    border-bottom: solid 3px red;
+}
+
+.chamber-form input:required:valid {
+    border-bottom: solid 3px green;
+}
