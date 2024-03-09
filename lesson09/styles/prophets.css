@@ -9,7 +9,6 @@ body {
 header,
 footer {
     text-align: center;
-    width: 100%;
     color: white;
     background-color: black;
     padding: 20px;
@@ -17,6 +16,7 @@ footer {
 
 main {
     margin: 2%;
+    
 }
 
 footer {
