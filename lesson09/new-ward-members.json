@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+        "familyName": "Rodriguez",
+        "moveInDate": "2001-01-30",
+        "numberOfPeople": 4,
+        "visitedBishopric": true,
+        "individualFamilyMembers": [
+            {
+                "name": "Mercy Rodriguez",
+                "gender": "Female",
+                "birthdate": "1967-07-12"
+            },
+            {
+                "name": "Jorge Rodriguez",
+                "gender": "Male",
+                "birthdate": "1993-09-30"
+            },
+            {
+                "name": "Pamela Rodriguez",
+                "gender": "Female",
+                "birthdate": "1996-07-07"
+            },
+            {
+                "name": "Jennifer Rodriguez",
+                "gender": "Female",
+                "birthdate": "1999-10-11"
+            }
+        ]
+    }
+}
