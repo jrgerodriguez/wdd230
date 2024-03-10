@@ -1,0 +1,125 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Layout"
+                },
+                {
+                    "url": "https://codepen.io/Jorge-Menjivar/pen/OJqXqoe",
+                    "title": "JS"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://jrgerodriguez.github.io/wdd230/lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/Captura.PNG",
+                    "title": "Combinator"
+                },
+                {
+                    "url": "https://codepen.io/Jorge-Menjivar/pen/oNVowZq?editors=1100",
+                    "title": "Pseudo-Element CodePen"
+                },
+                {
+                    "url": "https://codepen.io/Jorge-Menjivar/pen/GReOddZ",
+                    "title": "Responsive Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Jorge-Menjivar/pen/RwdyVVX",
+                    "title": "Pseudo-class Fun"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Loading of Images"
+                },
+                {
+                    "url": "localStorage/bom.html",
+                    "title": "localStorage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "Form-start/index.html",
+                    "title": "HTML Forms"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "The Fetch API"
+                }
+            ]
+        }
+    ]
+}
