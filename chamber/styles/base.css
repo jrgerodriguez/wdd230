@@ -606,3 +606,32 @@ textarea {
 
 /* ------------------------ DIRECTORY ------------------------ */
 
+.grid section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    height: 100px;
+    width: auto;
+	max-width: 100%;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
