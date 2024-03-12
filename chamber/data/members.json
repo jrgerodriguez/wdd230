@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Academia Europea",
+            "address": "Blvd. del ejercito, CA1W, San Salvador",
+            "url": "academiaeuropea.com",
+            "image": "images/academialogo.webp",
+            "membership": "Bronze",
+            "slogan": "#1 in languages"
+        },
+        {
+            "name": "Teleperformance",
+            "address": "Av. Olímpica 109, San Salvador",
+            "url": "www.teleperformance.com",
+            "image": "images/tplogo.webp",
+            "membership": "Silver",
+            "slogan": "Each interactions matters"
+        },
+        {
+            "name": "Direct English",
+            "address": "Blvr. De Los Heroes, San Salvador",
+            "url": "home.directenglish.global",
+            "image": "images/delogo.webp",
+            "membership": "Gold",
+            "slogan": "Changing Lives"
+        },
+        {
+            "name": "English4CallCenters",
+            "address": "67 Av. Sur, #120, Colonia Escalón, San Salvador",
+            "url": "english4callcenters.com",
+            "image": "images/e4cc.webp",
+            "membership": "Bronze",
+            "slogan": "#1 in english for call centers"
+        },
+        {
+            "name": "Blackhawk Network",
+            "address": "C. Nueva 2, San Salvador",
+            "url": "blackhawknetwork.com",
+            "image": "images/bhnlogo.webp",
+            "membership": "Silver",
+            "slogan": "Passion in every interaction"
+        },
+        {
+            "name": "Telus International",
+            "address": "Calle Chiltiupan, 17 Avenida Nte., Santa Tecla",
+            "url": "telusinternational.com",
+            "image": "images/teluslogo.webp",
+            "membership": "Gold",
+            "slogan": "Let's make the future friendly"
+        },
+        {
+            "name": "Walmart",
+            "address": "C. Nueva 1, San Salvador",
+            "url": "walmart.com.sv",
+            "image": "images/walmartlogo.webp",
+            "membership": "Bronze",
+            "slogan": "Save money. Live better"
+        }
+    ]
+}
