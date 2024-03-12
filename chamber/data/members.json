@@ -30,7 +30,7 @@
         },
         {
             "name": "Blackhawk Network",
-            "address": "C. Nueva 2, San Salvador",
+            "address": "C. Nueva 2, San Salvador, El Salvador",
             "url": "blackhawknetwork.com",
             "image": "images/bhnlogo.webp",
             "membership": "Silver"
@@ -44,7 +44,7 @@
         },
         {
             "name": "Walmart",
-            "address": "C. Nueva 1, San Salvador",
+            "address": "C. Nueva 1, San Salvador, El Salvador",
             "url": "walmart.com.sv",
             "image": "images/walmartlogo.webp",
             "membership": "Bronze"
