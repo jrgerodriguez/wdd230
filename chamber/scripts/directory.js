@@ -15,7 +15,7 @@ const displayMembers = (members) => {
     members.members.forEach((member) => {
         let section = document.createElement('section');
         let img = document.createElement('img');
-        let name = document.createElement('h3');
+        let name = document.createElement('h4');
         let address = document.createElement('p');
         let url = document.createElement('p');
         let membership = document.createElement('p');
