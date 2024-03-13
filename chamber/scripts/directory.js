@@ -52,3 +52,21 @@ function showList() {
     display.classList.remove("grid");
 }
 
+
+//Dark Mode
+
+const switchInput = document.querySelector('#switch-input');
+const body = document.querySelector('body');
+const directoryMain = document.querySelector('.directory-main');
+
+switchInput.addEventListener('change', () => {
+    if (switchInput.checked) {
+        body.style.backgroundColor = 'black';
+        directoryMain.style.color = 'black';
+    } else {
+        body.style.backgroundColor = 'white';
+        directoryMain.style.color = 'black';
+    }
+});
+
+

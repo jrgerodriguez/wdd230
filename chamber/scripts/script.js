@@ -21,13 +21,11 @@ const body = document.querySelector('body');
 const paragraph = document.querySelectorAll('.paragraph');
 const eventsButton = document.querySelector('.current-events__button');
 const membershipContent = document.querySelectorAll('.membership-content');
-const gridArticle = document.querySelector('.grid')
 
 switchInput.addEventListener('change', () => {
 	if (switchInput.checked) {
 		body.style.backgroundColor = 'black';
 		body.style.color = 'white';
-		gridArticle.style.color = 'black';
 		membershipContent.forEach(element => {
 			element.style.color = 'black';
 		})
