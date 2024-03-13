@@ -33,8 +33,22 @@ const displayMembers = (members) => {
         section.appendChild(membership);
 
         display.appendChild(section);
-
-    })
+    });
 }
 
 getMembersData();
+
+
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
+

@@ -610,11 +610,25 @@ textarea {
 
 /* ------------------------ DIRECTORY ------------------------ */
 
+#grid,
+#list {
+    padding: 0 3px;
+    margin: 0 0.5rem 5rem
+}
+
+.directory-main {
+    padding: 5rem 1rem;
+}
 
 .grid section {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
 }
 
 .grid {
@@ -624,14 +638,15 @@ textarea {
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 975px) {
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-}
 
-.grid section {
-    text-align: center;
+    .grid section {
+        height: 230px;
+        text-align: center;
+    }
 }
 
 .grid img {
@@ -648,4 +663,48 @@ textarea {
 
 .grid section>* {
     margin: 0.1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 20% repeat(3, 26%);
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+    align-items: center;
+}
+
+@media (max-width: 1054px) {
+
+    .list {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .list section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+.list section > * {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+    /* smaller viewports only */
+}
+
+.list section:nth-child(even) {
+    background-color: #eee;
+}
+
+.list section:nth-child(odd) {
+    background-color: #ffffff;
 }
