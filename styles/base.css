@@ -235,3 +235,17 @@ li {
     background-color: black;
     color: white;
 }
+
+
+/* ----- WEATHER ----- */
+
+#weather {
+    margin: 0;
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
