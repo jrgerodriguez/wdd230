@@ -1,4 +1,4 @@
-const temperatureString = document.getElementById('temperature').textContent;
+const temperatureString = document.getElementById('weather').textContent;
 const temperature = parseInt(temperatureString);
 
 const windSpeedString = document.getElementById('windspeed').textContent;
