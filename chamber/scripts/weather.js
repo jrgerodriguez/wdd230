@@ -108,11 +108,28 @@ function capitalizeCaption(phrase) {
     return capitalizedPhrase
 };
 
-const today = new Date();
-const tomorrow = new Date(today);
-tomorrow.setDate(today.getDate() + 1); //set tomorrow's date
+// const today = new Date();
+// const tomorrow = new Date(today);
+// tomorrow.setDate(today.getDate() + 1); //set tomorrow's date
 
-const options = { month: 'short', day: 'numeric' };
-const tomorrowString = tomorrow.toLocaleDateString('en-EN', options);
+// const options = { month: 'short', day: 'numeric' };
+// const tomorrowString = tomorrow.toLocaleDateString('en-EN', options);
 
-console.log(tomorrowString);
+// console.log(tomorrowString);
+
+
+// ------------------------ BANNER -------------------------
+
+document.addEventListener("DOMContentLoaded", function() {
+    var today = new Date();
+    var dayOfWeek = today.getDay(); 
+  
+    if (dayOfWeek >= 0 && dayOfWeek <= 3) { // show mon, tue, wed
+      document.getElementById("banner").classList.add("show");
+    }
+  
+    document.getElementById("closeBtn").addEventListener("click", function() {
+      document.getElementById("banner").classList.remove("show");
+    });
+  });
+  
