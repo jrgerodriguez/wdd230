@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var today = new Date();
     var dayOfWeek = today.getDay(); 
   
-    if (dayOfWeek >= 0 && dayOfWeek <= 3) { // show mon, tue, wed
+    if (dayOfWeek >= 1 && dayOfWeek <= 3) { // show mon, tue, wed
       document.getElementById("banner").classList.add("show");
     }
   
