@@ -693,7 +693,7 @@ textarea {
     }
 }
 
-.list section > * {
+.list section>* {
     margin: 0 1rem;
 }
 
@@ -708,4 +708,20 @@ textarea {
 
 .list section:nth-child(odd) {
     background-color: #ffffff;
+}
+
+
+/* ----------------------- FORECAST --------------------- */
+
+#forecastContainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day,
+.tempForecast {
+    margin: 0;
 }

@@ -80,17 +80,37 @@
                 <hr>
                 <p>Wind Speed: <span id="windspeed">7</span>mph</p>
                 <p>Wind Chill: <span id="windchill"></span></p>
-                <p>Temperature: <span id="weather"></span></p>
+                <hr>
                 <figure>
-                    <p>Current Weather:</p>
+                    <p><strong>Current Weather:</strong></p>
+                    <p>Temperature: <span id="weather"></span></p>
                     <img id="weather-icon" src="" alt="">
                     <figcaption id="figcaption"></figcaption>
                 </figure>
-                <figure>
-                    <p id="temp-for">3-day Temperature Forecast:</p>
-                    <img id="forecast-icon" src="" alt="">
-                    <figcaption id="forecast-figcaption"></figcaption>
-                </figure>
+                <hr>
+                <p><strong>3-day Forecast</strong></p>
+                <div id="forecastContainer">
+                    <figure id="day1">
+                        <p class="day"></p>
+                        <img class="forecastIcon" src="" alt="">
+                        <p class="tempForecast"></p>
+                        <figcaption class="forecastCaptionDesc"></figcaption>
+                    </figure>
+
+                    <figure id="day2">
+                        <p class="day"></p>
+                        <img class="forecastIcon" src="" alt="">
+                        <p class="tempForecast"></p>
+                        <figcaption class="forecastCaptionDesc"></figcaption>
+                    </figure>
+
+                    <figure id="day3">
+                        <p class="day"></p>
+                        <img class="forecastIcon" src="" alt="">
+                        <p class="tempForecast"></p>
+                        <figcaption class="forecastCaptionDesc"></figcaption>
+                    </figure>
+                </div>
             </div>
         </div> <!--main__info-section-->
 
