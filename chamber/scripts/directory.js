@@ -43,7 +43,7 @@ const displayMembers = (members) => {
         name.textContent = member.name;
         address.textContent = member.address;
         url.textContent = member.url;
-        membership.textContent = `Memberhip Type: ${member.membership}`;
+        membership.textContent = `Membership Type: ${member.membership}`;
 
         section.appendChild(img);
         section.appendChild(name);
