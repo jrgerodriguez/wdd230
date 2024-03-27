@@ -40,7 +40,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    height: 15rem;
+    height: auto;
 }
 
 .nav__pages__links,
@@ -84,16 +84,16 @@ a.active::before {
 }
 
 .nav__social li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
-.nav__logo___img-container {
+.nav__logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav__logo__img-container img {
+.nav__logo img {
     width: 25rem;
 }
 
@@ -112,22 +112,83 @@ a.active::before {
     }
 }
 
-.nav__social li:nth-child(4) a,
-.nav__pages__links li:nth-child(1) a {
+.nav__social li:nth-child(1) a,
+.nav__pages__links li:nth-child(4) a {
     animation-delay: 0.2s;
-}
-
-.nav__social li:nth-child(3) a,
-.nav__pages__links li:nth-child(2) a {
-    animation-delay: 0.4s;
 }
 
 .nav__social li:nth-child(2) a,
 .nav__pages__links li:nth-child(3) a {
+    animation-delay: 0.4s;
+}
+
+.nav__social li:nth-child(3) a,
+.nav__pages__links li:nth-child(2) a {
     animation-delay: 0.6s;
 }
 
-.nav__social li:nth-child(1) a,
-.nav__pages__links li:nth-child(4) a {
+.nav__social li:nth-child(4) a,
+.nav__pages__links li:nth-child(1) a {
     animation-delay: 0.8s;
+}
+
+#menu {
+    display: none;
+}
+
+@media (min-width: 920px) {
+    nav {
+        margin-top: -5rem;
+    }
+}
+
+@media (max-width: 920px) {
+    nav {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .nav__logo {
+        height: 8rem;
+        order: -2;
+        width: 100%;
+    }
+
+    .nav__social {
+        order: -1;
+    }
+}
+
+/* ---------- Burger Menu --------- */
+
+@media (max-width: 600px) {
+
+    #menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    .nav__pages__links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav__pages__links a {
+        display: none;
+    }
+
+    .open a {
+        display: block;
+    }
+
+    .nav__pages__links li a,
+    .nav__social a {
+        animation: none;
+        opacity: 1;
+    }
 }
