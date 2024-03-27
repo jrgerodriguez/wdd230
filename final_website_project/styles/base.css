@@ -168,6 +168,10 @@ a.active::before {
         display: block;
         background-color: transparent;
         border: none;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        position: absolute;
+        right: 0;
     }
 
     .nav__pages__links {
