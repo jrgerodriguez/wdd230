@@ -155,7 +155,7 @@ a.active::before {
         width: 100%;
     }
 
-    .nav__social {
+    .nav__social--container {
         order: -1;
     }
 }
