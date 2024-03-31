@@ -86,8 +86,10 @@ nav {
     animation: fadeIn 1s forwards;
 }
 
-a:hover:before,
-a.active:before {
+.nav__social a:hover::before,
+.nav__social a.active::before,
+.nav__pages__links a:hover::before,
+.nav__pages__links a.active::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -98,8 +100,10 @@ a.active:before {
     transition: width 0.3s ease;
 }
 
-a:hover::before,
-a.active::before {
+.nav__social a:hover::before,
+.nav__social a.active::before,
+.nav__pages__links a:hover::before,
+.nav__pages__links a.active::before {
     color: var(--textColor);
     transition: .3s;
     width: 100%;
@@ -223,12 +227,22 @@ a.active::before {
 
 .hero {
     position: relative;
+    display: grid;
+    grid-template-columns: 64% 36%;
+    align-items: center;
+    justify-items: center;
+}
+
+picture {
+    grid-column: 1/3;
+    grid-row: 1/2;
 }
 
 .hero img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+    opacity: 0.95;
 }
 
 @media (max-width: 975px) {
@@ -238,7 +252,39 @@ a.active::before {
 }
 
 @media (max-width: 600px) {
-    .hero img{
+    .hero img {
         border-radius: 0;
     }
+}
+
+.call-to-action {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 1;
+    padding: 0 10rem;
+}
+
+.call-to-action--title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #3d352b;
+    width: 75%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.call-to-action--description {
+    font-size: 2.6rem;
+    color: #2e2820;
+}
+
+.call-to-action--button {
+    font-size: 2rem;
+    background-color: #2e2820;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    font-weight: bold;
 }
