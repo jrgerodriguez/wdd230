@@ -341,6 +341,7 @@ picture {
 
     .hero img {
         border-radius: 0;
+        opacity: 1;
     }
 
     .call-to-action {
