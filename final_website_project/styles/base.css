@@ -41,6 +41,13 @@ a:visited {
     margin: 0 auto;
 }
 
+@media (max-width: 975px) {
+    .container {
+        max-width: 120rem;
+        width: 95%;
+    }
+}
+
 /* ---------- Navigation --------- */
 
 nav {
