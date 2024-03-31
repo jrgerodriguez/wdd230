@@ -48,7 +48,7 @@ a:visited {
     }
 }
 
-@media (max-width: 975px) {
+@media (max-width: 600px) {
     .container {
         max-width: 120rem;
         width: 100%;
