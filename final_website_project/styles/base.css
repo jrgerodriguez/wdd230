@@ -284,6 +284,10 @@ picture {
         margin-top: 3rem;
     }
 
+    .call-to-action {
+        padding: 0 7.3rem;
+    }
+
     .call-to-action--title {
         font-size: 4rem;
         width: 85%;
@@ -295,11 +299,11 @@ picture {
 
     .call-to-action--button {
         font-size: 1.7rem;
-        padding: 1.3rem 6rem;
+        padding: 1.3rem 5rem;
     }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 748px) {
 
     .call-to-action--title {
         font-size: 3.5rem;
