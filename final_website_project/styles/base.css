@@ -172,6 +172,10 @@ a.active::before {
         margin-top: 3rem;
     }
 
+    .nav__pages__links {
+        margin: 0;
+    }
+
     .nav__social--container {
         order: -1;
     }
