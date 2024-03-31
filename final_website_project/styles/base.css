@@ -48,7 +48,7 @@ a:visited {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .container {
         max-width: 120rem;
         width: 100%;
@@ -191,7 +191,7 @@ nav {
 
 /* ---------- Burger Menu --------- */
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     #menu {
         display: block;
@@ -245,18 +245,6 @@ picture {
     opacity: 0.9;
 }
 
-@media (max-width: 975px) {
-    .hero {
-        margin-top: 3rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero img {
-        border-radius: 0;
-    }
-}
-
 .call-to-action {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -289,4 +277,43 @@ picture {
     padding: 1.5rem 3rem;
     cursor: pointer;
     font-weight: bold;
+}
+
+@media (max-width: 975px) {
+    .hero {
+        margin-top: 3rem;
+    }
+
+    .call-to-action--title {
+        font-size: 4rem;
+        width: 85%;
+    }
+
+    .call-to-action--description {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 735px) {
+
+    .call-to-action--title {
+        font-size: 3.5rem;
+        width: 100%;
+    }
+
+    .call-to-action--description {
+        font-size: 2.1rem;
+    }
+
+    .call-to-action--button {
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero img {
+        border-radius: 0;
+    }
 }
