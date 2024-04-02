@@ -399,3 +399,66 @@ picture {
         padding: 1rem 5rem;
     }
 }
+
+/* ---------- Rental Types  --------- */
+
+.rentals__title {
+    margin-top: 5rem;
+}
+
+.rentals__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rentals__type-title {
+    margin: 5rem 0;
+    align-self: flex-start;
+}
+
+.rentals article {
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.rentals img {
+    width: 350px;
+    height: auto;
+}
+
+.rentals__type-info {
+    padding: 0 10rem;
+}
+
+@media (max-width: 748px) {
+
+    .rentals__title {
+        text-align: center;
+    }
+
+    .rentals article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rentals__type-title {
+        align-self: center;
+    }
+
+    hr {
+        width: 90%;
+    }
+}
