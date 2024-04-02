@@ -471,7 +471,7 @@ picture {
 @media (max-width: 795px) {
 
     .rentals__title {
-        width: 90%;
+        width: 95%;
         margin: 5rem auto 0 auto;
     }
 
@@ -487,12 +487,17 @@ picture {
     }
 
     hr {
-        width: 90%;
+        width: 95%;
     }
 }
 
 @media (max-width: 650px) {
     .rentals__title {
         text-align: center;
+    }
+
+    .rentals__title,
+    hr {
+        width: 90%
     }
 }
