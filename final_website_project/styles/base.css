@@ -442,7 +442,7 @@ picture {
     align-self: flex-start;
 }
 
-.rentals article {
+.rentals .article {
     border: solid 1px #ccc;
     border-radius: 20px;
     padding: 1rem;
@@ -452,9 +452,9 @@ picture {
     align-items: center;
 }
 
-.rentals>.rentals__section>article:nth-child(2),
-.rentals>.rentals__section>article:nth-child(3),
-.rentals>.rentals__section>article:nth-child(8) {
+.rentals>.rentals__section>.article:nth-child(2),
+.rentals>.rentals__section>.article:nth-child(3),
+.rentals>.rentals__section>.article:nth-child(8) {
     margin-bottom: 3rem;
 }
 
@@ -475,7 +475,7 @@ picture {
         margin: 5rem auto 0 auto;
     }
 
-    .rentals article {
+    .rentals .article {
         flex-direction: column;
         justify-content: center;
         align-items: center;
