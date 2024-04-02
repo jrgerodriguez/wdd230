@@ -458,6 +458,10 @@ picture {
         align-self: center;
     }
 
+    .rentals__type-info {
+        padding: 0 5rem;
+    }
+
     hr {
         width: 90%;
     }
