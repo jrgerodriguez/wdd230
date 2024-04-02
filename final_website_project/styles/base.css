@@ -61,6 +61,18 @@ hr {
     background-color: black;
 }
 
+@media (max-width: 795px) {
+    hr {
+        width: 95%;
+    }
+}
+
+@media (max-width: 650px) {
+    hr {
+        width: 80%
+    }
+}
+
 /* ---------- Typography --------- */
 
 h2 {
@@ -485,19 +497,10 @@ picture {
     .rentals__type-title {
         align-self: center;
     }
-
-    hr {
-        width: 95%;
-    }
 }
 
 @media (max-width: 650px) {
     .rentals__title {
         text-align: center;
-    }
-
-    .rentals__title,
-    hr {
-        width: 90%
     }
 }
