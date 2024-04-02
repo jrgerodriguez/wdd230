@@ -490,3 +490,9 @@ picture {
         width: 90%;
     }
 }
+
+@media (max-width: 650px) {
+    .rentals__title {
+        text-align: center;
+    }
+}
