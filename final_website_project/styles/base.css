@@ -464,6 +464,10 @@ picture {
     align-items: center;
 }
 
+.rentals__type-info p:first-of-type {
+    font-weight: bold;
+}
+
 .rentals>.rentals__section>.article:nth-child(2),
 .rentals>.rentals__section>.article:nth-child(3),
 .rentals>.rentals__section>.article:nth-child(8) {
