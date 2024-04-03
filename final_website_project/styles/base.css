@@ -587,6 +587,7 @@ figure {
 
 figure span {
     font-style: italic;
+    font-size: 1.7rem;
 }
 
 @media (max-width: 550px) {
