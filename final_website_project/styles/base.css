@@ -73,6 +73,25 @@ hr {
     }
 }
 
+.title {
+    margin-top: 5rem;
+    font-family: 'League Spartan';
+}
+
+@media (max-width: 795px) {
+    .title {
+        width: 95%;
+        margin: 5rem auto 0 auto;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .title {
+        text-align: center;
+    }
+}
+
 /* ---------- Typography --------- */
 
 h2 {
@@ -435,13 +454,6 @@ picture {
 
 /* ---------- Rental Types  --------- */
 
-.rentals__title,
-.contact__title,
-.weather__title {
-    margin-top: 5rem;
-    font-family: 'League Spartan';
-}
-
 .rentals__section {
     display: flex;
     justify-content: center;
@@ -488,12 +500,6 @@ picture {
 
 @media (max-width: 795px) {
 
-    .rentals__title,
-    .contact__title {
-        width: 95%;
-        margin: 5rem auto 0 auto;
-    }
-
     .rentals .article {
         flex-direction: column;
         justify-content: center;
@@ -503,14 +509,6 @@ picture {
 
     .rentals__type-title {
         align-self: center;
-    }
-}
-
-@media (max-width: 650px) {
-
-    .rentals__title,
-    .contact__title {
-        text-align: center;
     }
 }
 
@@ -543,7 +541,7 @@ picture {
     .contact {
         padding: 1rem 0;
     }
-    
+
     .contact__info {
         flex-direction: column;
     }
@@ -592,7 +590,7 @@ figure span {
     font-size: 1.7rem;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
     .figure-container {
         flex-direction: column;
         align-items: center;
