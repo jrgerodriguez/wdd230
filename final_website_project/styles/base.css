@@ -435,7 +435,8 @@ picture {
 
 /* ---------- Rental Types  --------- */
 
-.rentals__title {
+.rentals__title,
+.contact__title {
     margin-top: 5rem;
     font-family: 'League Spartan';
 }
@@ -486,7 +487,8 @@ picture {
 
 @media (max-width: 795px) {
 
-    .rentals__title {
+    .rentals__title,
+    .contact__title {
         width: 95%;
         margin: 5rem auto 0 auto;
     }
@@ -504,7 +506,49 @@ picture {
 }
 
 @media (max-width: 650px) {
-    .rentals__title {
+
+    .rentals__title,
+    .contact__title {
         text-align: center;
+    }
+}
+
+/* ---------- Contact Information  --------- */
+
+.contact {
+    background-image: linear-gradient(to bottom right, #0f344371, #34e69f91);
+    margin: 5rem 0;
+    padding: 5rem 0;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__info__mean {
+    box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+
+    .contact {
+        padding: 1rem 0;
+    }
+    
+    .contact__info {
+        flex-direction: column;
+    }
+
+    .contact__info__mean {
+        width: 90%;
+        margin: 1rem 0;
     }
 }
