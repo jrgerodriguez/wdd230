@@ -534,6 +534,7 @@ picture {
     height: auto;
     text-align: center;
     background-color: white;
+    font-family: 'League Spartan';
 }
 
 @media (max-width: 750px) {
@@ -549,5 +550,52 @@ picture {
     .contact__info__mean {
         width: 90%;
         margin: 1rem 0;
+    }
+}
+
+/* ---------- Weather  --------- */
+
+figure {
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.4);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(29, 29, 29, 0.1);
+}
+
+.figure-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+}
+
+.figure-container h3 {
+    font-family: 'League Spartan';
+}
+
+#temp-main,
+#main-next {
+    font-size: 2.5rem;
+}
+
+#temperature,
+#temperature-next,
+#humidity {
+    font-size: 3rem;
+}
+
+figure span {
+    font-style: italic;
+}
+
+@media (max-width: 550px) {
+    .figure-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        width: 90%;
     }
 }
