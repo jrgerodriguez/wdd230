@@ -534,7 +534,6 @@ picture {
     height: auto;
     text-align: center;
     background-color: white;
-    font-weight: bold;
 }
 
 @media (max-width: 750px) {
