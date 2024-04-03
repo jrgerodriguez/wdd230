@@ -436,7 +436,8 @@ picture {
 /* ---------- Rental Types  --------- */
 
 .rentals__title,
-.contact__title {
+.contact__title,
+.weather__title {
     margin-top: 5rem;
     font-family: 'League Spartan';
 }
@@ -568,6 +569,7 @@ figure {
     justify-content: center;
     align-items: start;
     flex-direction: row;
+    margin-top: 5rem;
 }
 
 .figure-container h3 {
