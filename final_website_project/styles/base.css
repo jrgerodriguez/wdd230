@@ -600,3 +600,53 @@ figure span {
         width: 90%;
     }
 }
+
+/* ---------- Footer  --------- */
+
+footer {
+    background-color: black;
+    margin-top: 5rem;
+    color: white;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 250px;
+    height: auto;
+}
+
+.footer__logo img {
+    max-width: 100%;
+}
+
+footer .nav__social a {
+    display: none;
+    animation: none;
+    opacity: 1;
+}
+
+.attributions {
+    font-family: 'League Spartan';
+    font-size: 2.5rem;
+}
+
+@media (max-width: 750px) {
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .attributions {
+        margin: 10rem 0;
+    }
+
+    footer .nav__social a {
+        display: block;
+        animation: none;
+        opacity: 1;
+    }
+}
