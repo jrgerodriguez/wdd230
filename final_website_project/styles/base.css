@@ -650,3 +650,33 @@ footer .nav__social a {
         opacity: 1;
     }
 }
+
+/* ---------- Banner  --------- */
+
+#banner {
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+#banner-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem 2.5rem;
+}
+
+#banner-content p {
+    font-size: 2.5rem;
+}
+
+#closeBtn {
+    cursor: pointer;
+    color: #555;
+}
+
+#banner.show {
+    display: block;
+}

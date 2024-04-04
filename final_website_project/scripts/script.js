@@ -43,6 +43,8 @@ const tempMain = document.querySelector('#temp-main');
 
 const humidity = document.querySelector('#humidity');
 
+const maxTemp = document.querySelector('#temp-max');
+
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=13.70&lon=-89.22&appid=f04c81d1f43f0c8dc412c6cf03b6a44b&units=metric';
 
 async function apiFetch() {
@@ -73,6 +75,7 @@ function displayResults(data) {
 
   humidity.innerHTML = `${data.main.humidity}%`;
 
+  maxTemp.innerHTML = `${Math.round(data.main.temp_max)}&deg;C`;
 }
 
 function capitalizeCaption(phrase) {
@@ -127,3 +130,13 @@ function displayForecastResults(data) {
   iconNext.setAttribute('alt', forecastDesc);
   captionDescNext.textContent = `${capitalizeCaption(forecastDesc)}`;
 }
+
+// ------------------------ BANNER -------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("banner").classList.add("show");
+  
+  document.getElementById("closeBtn").addEventListener("click", function () {
+    document.getElementById("banner").classList.remove("show");
+  });
+});
