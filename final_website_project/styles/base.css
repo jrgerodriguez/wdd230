@@ -693,7 +693,7 @@ footer .nav__social a {
 
 /* ---------- main --------- */
 
-main {
+.main__rentals {
     text-align: center;
 }
 
@@ -752,7 +752,7 @@ tr:nth-child(3) {
 
 @media (max-width: 975px) {
 
-    main {
+    .main__rentals {
         width: 90%;
         text-align: center;
         margin: 0 auto;
