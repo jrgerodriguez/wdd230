@@ -60,7 +60,7 @@ const displayRentals = (rentals) => {
 
         //Below is the structure of the first column, the type name and image
         let typeAndImageContainer = document.createElement('div');
-        let rentalType = document.createElement('h3');
+        let rentalType = document.createElement('h2');
         let imageContainer = document.createElement('div');
         let rentalImage = document.createElement('img');
         rentalImage.src = rental.image;       

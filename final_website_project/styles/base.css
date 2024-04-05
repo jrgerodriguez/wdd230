@@ -699,7 +699,7 @@ footer .nav__social a {
 
 main h1 {
     font-family: 'League Spartan';
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .rental-type-content {
@@ -769,12 +769,21 @@ tr:nth-child(3) {
 
     .rental-type-content img {
         margin-top: -1rem;
-        width: 400px;
         height: auto;
     }
 
     table {
         margin-top: 3rem;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .rental-type-content img {
+        width: 350px;
+    }
+
+    td {
+        padding: 1rem 1rem;
     }
 }
