@@ -52,6 +52,7 @@ async function getRentalsData() {
 }
 
 const displayRentals = (rentals) => {
+  let counter = 1;
   rentals.rentals.forEach((rental) => {
 
     // I create a section per type of rental which will have two columns
