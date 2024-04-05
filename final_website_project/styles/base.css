@@ -732,7 +732,6 @@ tr:nth-child(even) {
 th,
 td {
     border: 1px solid #c0c0c0;
-    padding: 8px;
     text-align: center;
     padding: 1rem 3rem;
 }
@@ -770,6 +769,8 @@ tr:nth-child(3) {
 
     .rental-type-content img {
         margin-top: -1rem;
+        width: 400px;
+        height: auto;
     }
 
     table {
