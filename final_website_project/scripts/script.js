@@ -1,3 +1,8 @@
+// ------------------------------------------- HOME PAGE ------------------------------------------------
+
+
+
+
 // ------------------------ MENU SCREEN -------------------------
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -32,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// ------------------------ WEATHER -------------------------
+// ------------------------ WEATHER SECTION -------------------------
 
 // ------------------------ TEMPERATURE -------------------------
 
@@ -140,3 +145,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("banner").classList.remove("show");
   });
 });
+
+
+
+
+
+// ------------------------------------------- RENTALS PAGE ------------------------------------------------
+
+
+// ------------------------ Rentals info  -------------------------
+
