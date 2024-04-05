@@ -365,6 +365,14 @@
 
 
     <script src=" ./scripts/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          // Cargar el script de rentals.html
+          var script = document.createElement('script');
+          script.src = 'path/to/rentals.html';
+          document.body.appendChild(script);
+        });
+      </script>
 </body>
 
 </html>
