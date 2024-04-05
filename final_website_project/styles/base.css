@@ -416,7 +416,8 @@ picture {
 
     .call-to-action--button {
         font-size: 2rem;
-        padding: 1rem 12rem;
+        padding: 1.5rem 12rem;
+        width: 100%;
     }
 }
 
@@ -432,7 +433,7 @@ picture {
 
     .call-to-action--button {
         font-size: 1.7rem;
-        padding: 1rem 10rem;
+        padding: 1.5rem 10rem;
     }
 }
 
@@ -448,7 +449,7 @@ picture {
 
     .call-to-action--button {
         font-size: 1.8rem;
-        padding: 1rem 5rem;
+        padding: 1.5rem 5rem;
     }
 }
 
@@ -510,6 +511,11 @@ picture {
     .rentals__type-title {
         align-self: center;
     }
+}
+
+.rate-link {
+    font-size: 1.7rem;
+    text-decoration: underline;
 }
 
 /* ---------- Contact Information  --------- */
