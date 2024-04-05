@@ -155,3 +155,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ------------------------ Rentals info  -------------------------
 
+const baseURL = "https://jrgerodriguez.github.io/wdd230/";
+const rentalsURL = "https://jrgerodriguez.github.io/wdd230/final_website_project/data/data.json";
+
+async function getRentalsData() {
+  const response = await fetch(rentalsURL);
+  const data = await response.json();
+  console.log(data);
+  // displayLinks(data);
+}
+
+getRentalsData();
