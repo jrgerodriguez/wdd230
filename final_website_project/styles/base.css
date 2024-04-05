@@ -743,13 +743,13 @@ th {
     color: white;
 }
 
-/* tr:nth-child(2) {
+tr:nth-child(2) {
     font-size: 1.5rem;
 }
 
 tr:nth-child(3) {
     font-size: 1.9rem;
-} */
+}
 
 @media (max-width: 975px) {
 
