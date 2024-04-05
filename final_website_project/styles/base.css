@@ -680,3 +680,100 @@ footer .nav__social a {
 #banner.show {
     display: block;
 }
+
+/* ------------------------------------------------ RENTALS PAGE---------------------------------------- */
+
+/* ---------- nav --------- */
+
+.nav__pages__links .no-animation a,
+.nav__social .no-animation a {
+    animation: none;
+    opacity: 1;
+}
+
+/* ---------- main --------- */
+
+main {
+    text-align: center;
+}
+
+main h1 {
+    font-family: 'League Spartan';
+    font-size: 5rem;
+}
+
+.rental-type-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12.5rem;
+    margin-left: -6rem;
+}
+
+.rental-type-content img {
+    width: 500px;
+    height: auto;
+}
+
+.rental-type-content p {
+    font-size: 1.9rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #c0c0c0;
+    padding: 8px;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+th {
+    font-size: 1.7rem;
+    background-color: #001514;
+    color: white;
+}
+
+/* tr:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+tr:nth-child(3) {
+    font-size: 1.9rem;
+} */
+
+@media (max-width: 975px) {
+
+    main {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    main h1 {
+        margin-top: 12.5rem;
+    }
+
+    .rental-type-content {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .rental-type-content img {
+        margin-top: -1rem;
+    }
+
+    table {
+        margin-top: 3rem;
+        width: 100%;
+    }
+}
