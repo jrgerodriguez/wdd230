@@ -774,6 +774,6 @@ tr:nth-child(3) {
 
     table {
         margin-top: 3rem;
-        width: 100%;
+        max-width: 100%;
     }
 }
