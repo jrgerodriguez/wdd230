@@ -150,3 +150,17 @@ const displayRentals = (rentals) => {
 }
 
 getRentalsData();
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtener el parámetro de la URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const rentalToShow = urlParams.get('rental');
+
+  if (rentalToShow) {
+      // Desplazarse automáticamente al elemento con el ID proporcionado
+      const rentalElement = document.getElementById(rentalToShow);
+      if (rentalElement) {
+          rentalElement.scrollIntoView({ behavior: 'smooth' });
+      }
+  }
+});

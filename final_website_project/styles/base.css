@@ -499,6 +499,11 @@ picture {
     padding: 0 5rem;
 }
 
+.rate-link {
+    font-size: 1.7rem;
+    text-decoration: underline;
+}
+
 @media (max-width: 795px) {
 
     .rentals .article {
@@ -511,11 +516,6 @@ picture {
     .rentals__type-title {
         align-self: center;
     }
-}
-
-.rate-link {
-    font-size: 1.7rem;
-    text-decoration: underline;
 }
 
 /* ---------- Contact Information  --------- */
