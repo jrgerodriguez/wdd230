@@ -862,7 +862,7 @@ tr:nth-child(3) {
 .reservations-form label,
 .type {
     display: block;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     font-size: 1.8rem;
     color: var(--textColor);
 }
