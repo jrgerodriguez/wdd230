@@ -760,7 +760,6 @@ tr:nth-child(3) {
 
     .main__rentals {
         width: 90%;
-        text-align: center;
         margin: 0 auto;
     }
 
@@ -792,4 +791,45 @@ tr:nth-child(3) {
     td {
         padding: 1rem 1rem;
     }
+}
+
+/* -------------------------------------------- RESERVATIONS PAGE---------------------------------------- */
+
+.reservations h1 {
+    text-align: center;
+}
+
+.reservations__content__container {
+    margin-top: 12.5rem;
+}
+
+@media (max-width: 975px) {
+
+    .reservations {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+.agreements ol {
+    list-style-type: none;
+    counter-reset: my-counter;
+    padding-left: 0;
+    margin-top: 3rem;
+}
+
+.agreements li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.9rem;
+}
+
+.agreements li:before {
+    content: "•";
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }
