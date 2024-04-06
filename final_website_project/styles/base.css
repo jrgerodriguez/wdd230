@@ -859,7 +859,8 @@ tr:nth-child(3) {
     font-family: 'League Spartan';
 }
 
-.reservations-form label {
+.reservations-form label,
+.type {
     display: block;
     padding-top: 2rem;
     font-size: 1.8rem;
@@ -902,6 +903,11 @@ tr:nth-child(3) {
     margin-left: 2%;
     box-shadow: 1px 1px 4px #999;
     font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.reservations-form input[type="submit"]:hover {
+    opacity: .95;
 }
 
 @media (max-width: 550px) {
@@ -917,5 +923,9 @@ tr:nth-child(3) {
     .reservations-form input[type="email"],
     .reservations-form input[type="text"] {
         max-width: 100%;
+    }
+
+    .reservations-form input[type="radio"] {
+        margin-left: 0;
     }
 }
