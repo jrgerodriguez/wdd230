@@ -122,6 +122,55 @@
                     <li>Rentals may be returned to either physical location.</li>
                 </ol>
 
+                <form action="" method="get" class="reservations-form">
+                    <fieldset>
+                        <legend>Rental Details</legend>
+
+                        <label>Pick-up Date *<input type="date" name="date" required id="idate"></label>
+
+                        <label>Return Date *<input type="date" name="date" required id="rdate"></label>
+
+                        <label class="type">Rental Type *</label>
+
+                        <label>
+                            <input type="radio" name="Type" value="Honda Metropolitan(49cc) - 1 person">
+                            Honda Metropolitan(49cc) - 1 person
+                        </label>
+                        <label>
+                            <input type="radio" name="Type" value="Honda Dio (110cc) - 2 person">
+                            Honda Dio (110cc) - 2 person
+                        </label>
+                        <label>
+                            <input type="radio" name="Type" value="Honda PCX150 (149cc) - 2 person">
+                            Honda PCX150 (149cc) - 2 person
+                        </label>
+                        <label>
+                            <input type="radio" name="Type" value="Honda Pioneer 1000 - 4 person">
+                            Honda Pioneer 1000 - 4 person
+                        </label>
+                        <label>
+                            <input type="radio" name="Type" value="Jeep Wrangler - 4-door with A/C - 5 person">
+                            Jeep Wrangler - 4-door with A/C - 5 person
+                        </label>
+                        <label>
+                            <input type="radio" name="Type" value="Jeep Wrangler - 2-door Open Air - 4 person">
+                            Jeep Wrangler - 2-door Open Air - 4 person
+                        </label>
+
+                        <label>Name *<input type="text" name="name" required id="name"></label>
+
+                        <label>Phone Number *<input type="tel" name="phone" required id="phone"></label>
+
+                        <label>Email *<input type="email" name="email" required id="email"
+                                placeholder="someome@email.com"></label>
+
+                        <label>Country *<input type="text" name="country" required id="country"></label>
+
+                        <label>Cruise Line <span id="cruise-line-span">(if applicable)</span><input type="text" name="cruise" id="cruise"></label>
+                    </fieldset>
+                    <input type="submit" value="Book My Rental">
+                </form>
+
             </div>
         </div>
     </main>

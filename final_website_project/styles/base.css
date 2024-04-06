@@ -812,6 +812,8 @@ tr:nth-child(3) {
 
 }
 
+/* ------------------------ Agreements ------------------------ */
+
 .agreements ol {
     list-style-type: none;
     counter-reset: my-counter;
@@ -832,4 +834,88 @@ tr:nth-child(3) {
     font-weight: bold;
     position: absolute;
     left: 0;
+}
+
+/* ------------------------ Form ------------------------ */
+
+.reservations-form {
+    margin-top: 5rem;
+}
+
+.reservations-form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 2rem;
+}
+
+.reservations-form legend {
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'League Spartan';
+}
+
+.reservations-form label {
+    display: block;
+    padding-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--textColor);
+}
+
+.reservations-form input[type="date"],
+.reservations-form input[type="tel"],
+.reservations-form input[type="name"],
+.reservations-form input[type="email"],
+.reservations-form input[type="text"] {
+    background-color: #f7f7f7;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .65rem;
+    width: 100%;
+    max-width: 350px;
+    appearance: none;
+}
+
+.reservations-form input[type="radio"] {
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+#cruise-line-span {
+    font-size: 1.5rem;
+}
+
+.reservations-form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: 1.3rem;
+    width: 96%;
+    max-width: 350px;
+    margin-top: 4.5rem;
+    margin-left: 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1.7rem;
+}
+
+@media (max-width: 550px) {
+    .reservations-form input[type="submit"] {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .reservations-form input[type="date"],
+    .reservations-form input[type="tel"],
+    .reservations-form input[type="name"],
+    .reservations-form input[type="email"],
+    .reservations-form input[type="text"] {
+        max-width: 100%;
+    }
 }
