@@ -104,6 +104,10 @@ fieldset {
     padding: 2rem 2%;
 }
 
+.attributions__links a{
+    text-decoration: underline;
+}
+
 /* ---------- Typography --------- */
 
 h2 {
