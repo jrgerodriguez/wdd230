@@ -41,8 +41,8 @@
             <ul class="nav__pages__links">
                 <li class="no-animation"><a href="index.html">Home</a></li>
                 <li class="no-animation"><a href="rentals.html">Rentals</a></li>
-                <li class="no-animation"><a href="reservations.html" class="active">Reservation</a></li>
-                <li class="no-animation"><a href="contact.html">Contact</a></li>
+                <li class="no-animation"><a href="reservations.html">Reservation</a></li>
+                <li class="no-animation"><a href="contact.html" class="active">Contact</a></li>
             </ul>
             <!-- Navigation Menu     -->
 
@@ -101,13 +101,74 @@
         </nav>
     </header>
 
-    <main class="container">
-        <div class="form-sent">
-            <div class="form-sent__img-container">
-                <img src="images/verified.png" alt="Check Image">
+    <main class="container contact-page___main">
+        <h1>Feel free to reach out!</h1>
+        <div class="contact-page__content"> <!--content-->
+            <h2 class="title">General Contact Information</h2>
+            <hr>
+            <div class="contact-page___details">
+                <div>
+                    <h3>Phone Numbers</h3>
+                    <p><strong>Mexico:</strong> +52 987 446 7659</p>
+                    <p><strong>USA:</strong> +1 (601) 291 6810</p>
+                    <p><strong>France:</strong> +33 (0)1 23 45 67 89</p>
+                    <p><strong>WhatsApp:</strong> +1 745 879 1234</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p><strong>Customer Service:</strong> support@scoots.com</p>
+                    <p><strong>Business:</strong> business@scoots.com</p>
+                </div>
+                <div>
+                    <h3>Social Networks</h3>
+                    <p><strong>Facebook:</strong> Scooots</p>
+                    <p><strong>Instagram:</strong> @scoots</p>
+                    <p><strong>X:</strong> @scoots_adventures</p>
+                    <p><strong>YouTube:</strong> Scoots</p>
+                </div>
+                <div>
+                    <h3>Mailing Address:</h3>
+                    <p>Canal de Miramontes 2600 Cozumel Q. ROO. Mexico</p>
+                </div>
             </div>
-            <h1 class="form-sent__h1">Confirmation sent to your email. Thank you.</h1>
-        </div>
+            <h2 class="title">Physical Locations</h2>
+            <hr>
+
+            <div class="maps">
+                <div>
+                    <h3>Playa del Carmen-Cozumel ferry dock in Centro de Cozumel</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2097.260580764832!2d-86.95048839286741!3d20.510592690397164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlaya%20del%20Carmen-Cozumel%20Ferry%20dock!5e0!3m2!1ses-419!2ssv!4v1712506776308!5m2!1ses-419!2ssv"
+                        width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div>
+                    <h3>Terminal Puerta Maya further south along the coast</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8637.000009612704!2d-86.9768353039087!3d20.47260066270012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTerminal%20Puerta%20Maya!5e0!3m2!1ses-419!2ssv!4v1712506870774!5m2!1ses-419!2ssv"
+                        width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="contact__form">
+                <form method="get" class="reservations-form">
+                    <fieldset class="contact-us__form___fieldset">
+                        <legend>Contact Us</legend>
+
+                        <label>Name *<input type="text" name="name" required id="name"></label>
+
+                        <label>Email *<input type="email" name="email" required id="email"
+                                placeholder="someome@email.com"></label>
+
+                        <label>Comment<textarea name="description" id="description" cols="30"
+                                rows="10"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div> <!--content-->
     </main>
 
     <footer>
@@ -157,7 +218,6 @@
                             </svg></a></li>
                 </ul>
             </div>
-
             <div>
                 <p class="attributions"><a href="attributions.html">Attributions</a></p>
             </div>

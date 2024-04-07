@@ -1,3 +1,5 @@
+/* -------------------------------------------- HOME PAGE---------------------------------------- */
+
 :root {
     --mainFont: 'Nunito Sans', sans-serif;
     --textColor: black;
@@ -793,13 +795,15 @@ tr:nth-child(3) {
     }
 }
 
-/* -------------------------------------------- RESERVATIONS PAGE---------------------------------------- */
+/* -------------------------------------------- RESERVATIONS/CONTACT PAGE---------------------------------------- */
 
-.reservations h1 {
+.reservations h1,
+.contact-page___main h1 {
     text-align: center;
 }
 
-.reservations__content__container {
+.reservations__content__container,
+.contact-page__content {
     margin-top: 12.5rem;
 }
 
@@ -971,5 +975,47 @@ textarea {
     .form-sent__h1 {
         font-size: 5rem;
         margin-top: 5rem;
+    }
+}
+
+/* -------------------------------------------- CONTACT PAGE---------------------------------------- */
+
+.contact-page___details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.contact-page___details,
+.maps,
+.contact__form {
+    margin: 5rem 0
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.contact__form .reservations-form label{
+    padding: 1rem;
+}
+
+@media (max-width: 1050px) {
+
+    .contact-page___main {
+        width: 90%;
+    }
+    .contact-page___details {
+        grid-template-columns: 1fr;
+        gap: 3rem;
     }
 }
