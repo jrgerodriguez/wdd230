@@ -871,7 +871,8 @@ tr:nth-child(3) {
 .reservations-form input[type="tel"],
 .reservations-form input[type="name"],
 .reservations-form input[type="email"],
-.reservations-form input[type="text"] {
+.reservations-form input[type="text"],
+textarea {
     background-color: #f7f7f7;
     display: block;
     border: solid 1px #999;
@@ -921,7 +922,8 @@ tr:nth-child(3) {
     .reservations-form input[type="tel"],
     .reservations-form input[type="name"],
     .reservations-form input[type="email"],
-    .reservations-form input[type="text"] {
+    .reservations-form input[type="text"],
+    textarea {
         max-width: 100%;
     }
 
