@@ -960,3 +960,14 @@ tr:nth-child(3) {
         margin-top: 10rem;
     }
 }
+
+@media (max-width: 450px) {
+    .form-sent {
+        margin-top: 7rem;
+    }
+
+    .form-sent__h1 {
+        font-size: 5rem;
+        margin-top: 5rem;
+    }
+}
