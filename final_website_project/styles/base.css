@@ -35,6 +35,11 @@ a:visited {
     color: inherit;
 }
 
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* ---------- Utilities --------- */
 
 .container {
@@ -92,6 +97,11 @@ hr {
     .title {
         text-align: center;
     }
+}
+
+fieldset {
+    min-width: 100%;
+    padding: 2rem 2%;
 }
 
 /* ---------- Typography --------- */
@@ -853,7 +863,6 @@ tr:nth-child(3) {
     align-items: initial;
     border: 1px solid #000;
     border-radius: 6px;
-    padding: 2rem;
 }
 
 .reservations-form legend {
@@ -1005,7 +1014,7 @@ iframe {
     max-width: 100%;
 }
 
-.contact__form .reservations-form label{
+.contact__form .reservations-form label {
     padding: 1rem;
 }
 
@@ -1014,6 +1023,7 @@ iframe {
     .contact-page___main {
         width: 90%;
     }
+
     .contact-page___details {
         grid-template-columns: 1fr;
         gap: 3rem;
