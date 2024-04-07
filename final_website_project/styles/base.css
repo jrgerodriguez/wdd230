@@ -929,3 +929,34 @@ tr:nth-child(3) {
         margin-left: 0;
     }
 }
+
+/* ------------------------ form-sent page ------------------------ */
+
+.form-sent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5rem;
+    text-align: center;
+}
+
+.form-sent__img-container {
+    width: 200px;
+    height: auto;
+}
+
+.form-sent img {
+    width: 100%;
+}
+
+.form-sent__h1 {
+    font-family: 'League Spartan';
+    color: #39b54a;
+}
+
+@media (max-width: 975px) {
+    .form-sent {
+        margin-top: 10rem;
+    }
+}

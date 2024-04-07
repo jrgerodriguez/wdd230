@@ -101,78 +101,12 @@
         </nav>
     </header>
 
-    <main class="reservations container">
-        <h1>Add some excitement to your calendar—book now!</h1>
-
-        <div class="reservations__content__container">
-            <h2 class="title">Rental Services and Agreements</h2>
-            <hr>
-
-            <div class="agreements">
-                <ol>
-                    <li>A $50 security deposit is required to confirm reservations.</li>
-                    <li>A valid driver's license is required in hand at the time of rental.</li>
-                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                    <li>Fuel charge is not included.</li>
-                    <li>Unlimited mileage.</li>
-                    <li>Liability insurance is included.</li>
-                    <li>Damage insurance is available for purchase.</li>
-                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
-                    <li>Rentals may be returned to either physical location.</li>
-                </ol>
-
-                <form action="form-sent.html" method="get" class="reservations-form">
-                    <fieldset>
-                        <legend>Rental Details</legend>
-
-                        <label>Pick-up Date *<input type="date" name="date" required id="idate"></label>
-
-                        <label>Return Date *<input type="date" name="date" required id="rdate"></label>
-
-                        <div class="type">Rental Type *</div>
-
-                        <label>
-                            <input type="radio" name="Rental Type" value="Honda Metropolitan(49cc) - 1 person">
-                            Honda Metropolitan - 1 person
-                        </label>
-                        <label>
-                            <input type="radio" name="Rental Type" value="Honda Dio (110cc) - 2 person">
-                            Honda Dio - 2 person
-                        </label>
-                        <label>
-                            <input type="radio" name="Rental Type" value="Honda PCX150 (149cc) - 2 person">
-                            Honda PCX150 - 2 person
-                        </label>
-                        <label>
-                            <input type="radio" name="Rental Type" value="Honda Pioneer 1000 - 4 person">
-                            Honda Pioneer 1000 - 4 person
-                        </label>
-                        <label>
-                            <input type="radio" name="Rental Type" value="Jeep Wrangler - 4-door with A/C - 5 person">
-                            Jeep Wrangler 4-door A/C - 5 person
-                        </label>
-                        <label>
-                            <input type="radio" name="Rental Type" value="Jeep Wrangler - 2-door Open Air - 4 person">
-                            Jeep Wrangler 2-door O/A - 4 person
-                        </label>
-
-                        <label>Name *<input type="text" name="name" required id="name"></label>
-
-                        <label>Phone Number *<input type="tel" name="phone" required id="phone"></label>
-
-                        <label>Email *<input type="email" name="email" required id="email"
-                                placeholder="someome@email.com"></label>
-
-                        <label>Country *<input type="text" name="country" required id="country"></label>
-
-                        <label>Cruise Line <span id="cruise-line-span">(if applicable)</span><input type="text"
-                                name="cruise" id="cruise"></label>
-                    </fieldset>
-                    <input type="submit" value="Book My Rental">
-                </form>
-
+    <main class="container">
+        <div class="form-sent">
+            <div class="form-sent__img-container">
+                <img src="images/verified.png" alt="Check Image">
             </div>
+            <h1 class="form-sent__h1">Confirmation sent to your email. Thank you.</h1>
         </div>
     </main>
 
