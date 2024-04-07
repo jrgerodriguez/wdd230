@@ -877,7 +877,8 @@ tr:nth-child(3) {
 }
 
 .reservations-form label,
-.type {
+.type,
+.period {
     display: block;
     padding-top: 2.5rem;
     font-size: 1.8rem;
@@ -905,7 +906,7 @@ textarea {
     margin-right: 1rem;
 }
 
-#cruise-line-span {
+.cruise-line-span {
     font-size: 1.5rem;
 }
 

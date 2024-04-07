@@ -130,6 +130,17 @@
 
                         <label>Return Date *<input type="date" name="date" required id="rdate"></label>
 
+                        <div class="period">Period<span class="cruise-line-span"> (for 1-day rentals)</span></div>
+
+                        <label>
+                            <input type="radio" name="Period" value="Half Day (3 hours)">
+                            Half Day (3 hours)
+                        </label>
+                        <label>
+                            <input type="radio" name="Period" value="Full Day">
+                            Full Day
+                        </label>
+
                         <div class="type">Rental Type *</div>
 
                         <label>
@@ -166,7 +177,7 @@
 
                         <label>Country *<input type="text" name="country" required id="country"></label>
 
-                        <label>Cruise Line <span id="cruise-line-span">(if applicable)</span><input type="text"
+                        <label>Cruise Line <span class="cruise-line-span">(if applicable)</span><input type="text"
                                 name="cruise" id="cruise"></label>
 
                         <label>Special Accommodations/Comments<textarea name="description" id="description"
