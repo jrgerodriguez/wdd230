@@ -14,6 +14,7 @@ main {
     width: 70%;
     border-collapse: collapse;
     margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Agrego sombra para destacar el formulario */
 }
 
 #table th,
@@ -53,7 +54,6 @@ tr {
     align-items: center;
     justify-content: center;
     width: 25%;
-    border: 2px solid #4CAF50; /* Cambio el color del borde a verde */
     border-radius: 10px;
     padding: 20px; /* Añado espacio interno para mejorar la apariencia */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Agrego sombra para destacar el formulario */
@@ -81,9 +81,8 @@ tr {
 #info_clientes button[type="submit"] {
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px 20px; /* Aumento el espacio alrededor del botón */
-    background-color: #4CAF50; /* Cambio el color de fondo a verde */
-    color: white; /* Cambio el color del texto a blanco */
+    padding: 10px 30px; /* Aumento el espacio alrededor del botón */
+    background-color: #ccc; /* Cambio el color de fondo a verde */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -91,5 +90,6 @@ tr {
 }
 
 #info_clientes button[type="submit"]:hover {
-    background-color: #45a049; /* Cambio el color de fondo al pasar el mouse */
+    background-color: #8B0000; /* Cambio el color de fondo al pasar el mouse */
+    color: white;
 }
