@@ -1,0 +1,95 @@
+/* -------------------------------- Tabla ----------------------------- */
+
+body {
+    text-align: center;
+    font-family: calibri;
+}
+
+main {
+    margin: 50px 0;
+}
+
+#table {
+    font-size: 17px;
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#table th,
+#table td,
+tr {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+#table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#table tr:hover {
+    background-color: #f2f2f2;
+}
+
+#table button {
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+/* -------------------------------- Formulario ----------------------------- */
+
+#info_clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border: 2px solid #4CAF50; /* Cambio el color del borde a verde */
+    border-radius: 10px;
+    padding: 20px; /* Añado espacio interno para mejorar la apariencia */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Agrego sombra para destacar el formulario */
+    margin: 50px auto 0;
+}
+
+#info_clientes label {
+    margin-top: 10px;
+    font-weight: bold; /* Hago que las etiquetas sean más notables */
+}
+
+#info_clientes input[type="text"],
+#info_clientes input[type="email"],
+#info_clientes input[type="date"] {
+    border: 1px solid #ccc;
+    padding: 10px; /* Aumento el relleno para hacer los campos más grandes */
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif; /* Cambio la fuente a Arial para una apariencia más limpia */
+    font-size: 16px; /* Ajusto el tamaño de la fuente */
+    color: #333; /* Cambio el color del texto para que sea más oscuro */
+}
+
+#info_clientes button[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px; /* Aumento el espacio alrededor del botón */
+    background-color: #4CAF50; /* Cambio el color de fondo a verde */
+    color: white; /* Cambio el color del texto a blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agrego una transición suave al color de fondo */
+}
+
+#info_clientes button[type="submit"]:hover {
+    background-color: #45a049; /* Cambio el color de fondo al pasar el mouse */
+}
