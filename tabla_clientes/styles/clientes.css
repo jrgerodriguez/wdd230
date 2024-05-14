@@ -24,6 +24,7 @@ tr {
     text-align: left;
     border-bottom: 1px solid #ddd;
     text-align: center;
+    max-width: 100%;
 }
 
 #table th {
@@ -68,7 +69,8 @@ tr {
 
 #info_clientes input[type="text"],
 #info_clientes input[type="email"],
-#info_clientes input[type="date"] {
+#info_clientes input[type="date"],
+textarea {
     border: 1px solid #ccc;
     padding: 10px; /* Aumento el relleno para hacer los campos más grandes */
     border-radius: 5px;

@@ -2,13 +2,14 @@ const nombreCliente = document.querySelector('#nombre_cliente');
 const fechaIngreso = document.querySelector('#fecha_ingreso');
 const telefonoCliente = document.querySelector('#telefono_cliente');
 const modeloDispositivo = document.querySelector('#modelo_dispositivo');
+const comentario = document.querySelector('#comentario');
 const button = document.querySelector('button');
 const tbody = document.querySelector('tbody');
 
 let clientesLista = getListaClientes() || [];
 
 clientesLista.forEach(cliente => {
-    displayList(cliente.nombreCliente, cliente.telefonoCliente, cliente.modeloDispositivo, cliente.fechaIngreso);
+    displayList(cliente.nombreCliente, cliente.telefonoCliente, cliente.modeloDispositivo, cliente.fechaIngreso, cliente.comentario);
 });
 
 button.addEventListener('click', () => {
@@ -18,31 +19,35 @@ button.addEventListener('click', () => {
             telefonoCliente: telefonoCliente.value,
             modeloDispositivo: modeloDispositivo.value,
             fechaIngreso: fechaIngreso.value,
+            comentario: comentario.value,
         };
-        displayList(cliente.nombreCliente, cliente.telefonoCliente, cliente.modeloDispositivo, cliente.fechaIngreso);
+        displayList(cliente.nombreCliente, cliente.telefonoCliente, cliente.modeloDispositivo, cliente.fechaIngreso, cliente.comentario);
         clientesLista.push(cliente);
         setListaClientes();
         nombreCliente.value = "";
         telefonoCliente.value = "";
         modeloDispositivo.value = "";
         fechaIngreso.value = "";
+        comentario.value = "";
         nombreCliente.focus();
     }
 });
 
 
-function displayList(nombre, telefono, modelo, fecha) {
+function displayList(nombre, telefono, modelo, fecha, comentario) {
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
     const tdPhone = document.createElement('td');
     const tdModel = document.createElement('td');
     const tdDate = document.createElement('td');
     const tdDays = document.createElement('td');
+    const tdComentario = document.createElement('td');
 
     tdName.textContent = nombre;
     tdPhone.textContent = telefono;
     tdModel.textContent = modelo;
     tdDate.textContent = fecha;
+    tdComentario.textContent = comentario;
 
     const dias = numeroDias(fecha);
     tdDays.textContent = dias;
@@ -52,6 +57,7 @@ function displayList(nombre, telefono, modelo, fecha) {
     tr.appendChild(tdModel);
     tr.appendChild(tdDate);
     tr.appendChild(tdDays);
+    tr.appendChild(tdComentario);
 
     const deleteBtn = document.createElement('button');
     deleteBtn.innerHTML = `
