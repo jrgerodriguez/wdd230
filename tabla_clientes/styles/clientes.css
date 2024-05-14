@@ -79,6 +79,7 @@ textarea {
     font-family: Arial, sans-serif; /* Cambio la fuente a Arial para una apariencia más limpia */
     font-size: 16px; /* Ajusto el tamaño de la fuente */
     color: #333; /* Cambio el color del texto para que sea más oscuro */
+    max-width: 300px;
 }
 
 #info_clientes button[type="submit"] {
