@@ -46,11 +46,21 @@ function displayList(nombre, telefono, modelo, fecha, comentario) {
     tdName.textContent = nombre;
     tdPhone.textContent = telefono;
     tdModel.textContent = modelo;
-    tdDate.textContent = fecha;
+
+    let fechaDate = new Date(fecha);
+    fechaDate.setDate(fechaDate.getDate() + 1);
+    let fechaFormateada = fechaDate.toLocaleDateString('es-ES', { 
+        year: 'numeric', 
+        month: 'numeric', 
+        day: 'numeric' 
+    });
+    tdDate.textContent = fechaFormateada;
+
+
     tdComentario.textContent = comentario;
 
     const dias = numeroDias(fecha);
-    tdDays.textContent = dias;
+    tdDays.textContent = dias - 1;
 
     tr.appendChild(tdName);
     tr.appendChild(tdPhone);
@@ -92,10 +102,19 @@ function deleteChapter(clienteNombre) {
 }
 
 function numeroDias(fecha) {
-    let fechaInicial = new Date(fecha);
+
+    let partesFecha = fecha.split('-');
+    let dia = partesFecha[0];
+    let mes = partesFecha[1];
+    let year = partesFecha[2];
+
+
+    let fechaInicial = new Date(`${dia}-${mes}-${year}`);
     let fechaFinal = new Date();
+
     let diferenciaEnMs = fechaFinal - fechaInicial;
     let dias = Math.floor(diferenciaEnMs / (1000 * 60 * 60 * 24));
+
     return dias;
 }
 
