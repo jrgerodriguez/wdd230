@@ -60,7 +60,7 @@ function displayList(nombre, telefono, modelo, fecha, comentario) {
     tdComentario.textContent = comentario;
 
     const dias = numeroDias(fecha);
-    tdDays.textContent = dias - 1;
+    tdDays.textContent = dias;
 
     tr.appendChild(tdName);
     tr.appendChild(tdPhone);
